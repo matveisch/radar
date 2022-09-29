@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap");
+#crop {
+  width: 100%;
+  height: 50vw;
+  overflow: hidden;
+}
+
+#radar-container {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+#radar-container h1 {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 62px;
+  position: absolute;
+  top: 30px;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+#radar-container #background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #232932;
+}
+#radar-container #background img {
+  z-index: 1;
+  position: absolute;
+}
+#radar-container #background #at {
+  top: 60%;
+  left: 40%;
+}
+#radar-container #background #sound {
+  top: 50%;
+  left: 20%;
+}
+#radar-container #background #facebook {
+  top: 30%;
+  left: 35%;
+}
+#radar-container #background #connection {
+  top: 20%;
+  left: 45%;
+}
+#radar-container #background #messenger {
+  top: 35%;
+  left: 50%;
+}
+#radar-container #background #social {
+  top: 25%;
+  left: 60%;
+}
+
+#radar-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  filter: blur(8px);
+  backdrop-filter: blur(18px);
+}
+#radar-parent #radar {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  animation: sweep 4s infinite linear;
+  background: conic-gradient(from 180deg at 50.1% 47.34%, #69FE8B 0deg, rgba(35, 41, 50, 0) 69.37deg, rgba(35, 41, 50, 0) 346.88deg, #69FE8B 360deg);
+  opacity: 0.6;
+}
+
+@keyframes sweep {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/*# sourceMappingURL=Radar.css.map */
