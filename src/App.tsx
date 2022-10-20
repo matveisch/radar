@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import Radar from "./radar/Radar";
+import './styles/App.css';
+import Radar from "./components/radar/Radar";
 
 function App() {
     return (
