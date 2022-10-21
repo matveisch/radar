@@ -4,7 +4,8 @@ Basic info about the app structure and a few dev advices
 ## dev process
 чтобы максимально обезопасить себя от ошибок и проблем, которые могут возникнуть в процессе разработки, нужно будет:
 * для каждого изменения создать отдельную ветку, понятно ее назвать
-* как только все изменения commited, нужно сделать merge этой ветки в ветку development, используя pull request
+* как только все изменения commited, нужно сделать pull request только что созданной ветки в ветку development
+* только после этого можно будет делать merge веток development и только что созданной
 
 ## tech
 this app is going to be build with:
