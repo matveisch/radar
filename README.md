@@ -7,6 +7,8 @@ Basic info about the app structure and a few dev advices
 * как только все изменения commited, нужно сделать pull request только что созданной ветки в ветку development
 * только после этого можно будет делать merge веток development и только что созданной
 
+Документация, максимально подробно описывающая процесс, доступна по [ссылке](https://docs.google.com/document/d/1YBmXMlBL0ZOQqmNCA3cPOUap58znVeGtEGyZVXRq_W4/edit?usp=sharing).
+
 ## tech
 this app is going to be build with:
 
