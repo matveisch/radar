@@ -1,18 +1,18 @@
 import React from 'react';
 
 import './Radar.css';
-import at from './images/at.png';
-import chain from './images/chain.png';
-import connection from './images/connection.png';
-import facebook from './images/facebook.png';
-import graph from './images/graph.png';
-import instagram from './images/instagram.png';
-import messenger from './images/messenger.png';
-import radar from './images/radar.png';
-import social from './images/social.png';
-import sound from './images/sound.png';
-import stat from './images/stat.png';
-import telegram from './images/telegram.png';
+import at from '../../images/at.png';
+import chain from '../../images/chain.png';
+import connection from '../../images/connection.png';
+import facebook from '../../images/facebook.png';
+import graph from '../../images/graph.png';
+import instagram from '../../images/instagram.png';
+import messenger from '../../images/messenger.png';
+import radar from '../../images/radar.png';
+import social from '../../images/social.png';
+import sound from '../../images/sound.png';
+import stat from '../../images/stat.png';
+import telegram from '../../images/telegram.png';
 
 const Radar = () => {
     return (

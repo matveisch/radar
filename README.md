@@ -27,7 +27,7 @@ pages consist of _components_. stuff like login page, contact page, the main web
 css and scss files to be applicable for the whole app. do not add anything here.
 
 ### images
-any reusable images should be here, otherwise we can store images right inside of ui, component or pages directories.
+every single image should be placed here
 
 ### data 
 any data like languages should be placed here.
