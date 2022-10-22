@@ -1,6 +1,5 @@
 import React from 'react';
 import './Radar.css';
-import at from '../../images/at.png';
 import chain from '../../images/chain.png';
 import connection from '../../images/connection.png';
 import facebook from '../../images/facebook.png';
@@ -22,7 +21,6 @@ const Radar = () => {
                     <h1 className="H1">Digital Marketing Agency</h1>
                 </div>
                 <div id="background">
-                    <img src={at} alt="" id="at"/>
                     <img src={chain} alt="" id="chain"/>
                     <img src={connection} alt="" id="connection"/>
                     <img src={facebook} alt="" id="facebook"/>
