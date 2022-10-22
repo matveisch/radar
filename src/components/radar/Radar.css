@@ -1,26 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
 #crop {
   width: 100%;
-  height: 50vw;
+  height: 40vw;
   overflow: hidden;
 }
 
 #radar-container {
   width: 100%;
-  height: 700px;
+  height: 100%;
   position: relative;
 }
-#radar-container h1 {
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 62px;
+#radar-container #titles {
+  width: 100%;
   position: absolute;
-  top: 30px;
-  width: 100vw;
-  text-align: center;
-  color: white;
+  top: 0;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+}
+#radar-container #titles h1, #radar-container #titles h2 {
+  color: #EEEEEE;
+}
+#radar-container #titles h2 {
+  text-transform: uppercase;
 }
 #radar-container #background {
   position: relative;
@@ -31,6 +98,7 @@
 #radar-container #background img {
   z-index: 1;
   position: absolute;
+  width: 3%;
 }
 #radar-container #background #at {
   top: 60%;
@@ -41,11 +109,11 @@
   left: 20%;
 }
 #radar-container #background #facebook {
-  top: 30%;
+  top: 35%;
   left: 35%;
 }
 #radar-container #background #connection {
-  top: 20%;
+  top: 40%;
   left: 45%;
 }
 #radar-container #background #messenger {
@@ -53,7 +121,7 @@
   left: 50%;
 }
 #radar-container #background #social {
-  top: 25%;
+  top: 40%;
   left: 60%;
 }
 
@@ -68,7 +136,6 @@
   overflow: hidden;
   transform: matrix(1, 0, 0, -1, 0, 0);
   filter: blur(8px);
-  backdrop-filter: blur(18px);
 }
 #radar-parent #radar {
   width: 80%;

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './Radar.css';
 import at from '../../images/at.png';
 import chain from '../../images/chain.png';
@@ -18,7 +17,10 @@ const Radar = () => {
     return (
         <div id="crop">
             <div id="radar-container">
-                <h1>Digital Marketing Agency</h1>
+                <div id="titles">
+                    <h2 className="H3">full-cycle</h2>
+                    <h1 className="H1">Digital Marketing Agency</h1>
+                </div>
                 <div id="background">
                     <img src={at} alt="" id="at"/>
                     <img src={chain} alt="" id="chain"/>
