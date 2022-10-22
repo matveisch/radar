@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.navbar-button {
+  padding: 10px 35px;
+  background-color: unset;
+  color: $off-white;
+  border-radius: 49px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 0 2px #69FE8B;
+  }
+}
