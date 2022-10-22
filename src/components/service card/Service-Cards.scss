@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+#card-parent {
+    background-color: $black;
+    border-radius: 16px;
+    padding: 20px;
+    
+    #title {
+    color: $main-green;
+    }
+
+    ul{
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+        
+        #list-item{
+            margin-bottom: 5px;
+            color: $main-green;
+
+            span {
+                    color: $off-white;
+                }
+        }
+    }
+    #learn-more-parent{
+        display: flex;
+        align-items: end;
+        text-align: right;
+
+        #learn-more {
+            margin-left: auto;
+          color: $main-green;
+          margin-right: 8px;
+        }
+    }
+    
+}
