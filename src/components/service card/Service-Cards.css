@@ -59,4 +59,45 @@
   line-height: 15px;
   letter-spacing: 0;
 }
-/*# sourceMappingURL=variables.css.map */
+
+#card-parent {
+  background-color: #232932;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+#card-parent #title {
+  color: #69FE8B;
+}
+
+#card-parent ul {
+  padding-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#card-parent ul #list-item {
+  margin-bottom: 5px;
+  color: #69FE8B;
+}
+
+#card-parent ul #list-item span {
+  color: #EEEEEE;
+}
+
+#card-parent #learn-more-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  text-align: right;
+}
+
+#card-parent #learn-more-parent #learn-more {
+  margin-left: auto;
+  color: #69FE8B;
+  margin-right: 8px;
+}
+/*# sourceMappingURL=Service-Cards.css.map */

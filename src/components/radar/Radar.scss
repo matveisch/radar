@@ -131,9 +131,15 @@
     overflow: hidden;
     border-radius: 50%;
 
-    animation: sweep 4s infinite linear;
-    background: conic-gradient(from 180deg at 50.1% 47.34%, #69FE8B 0deg, rgba(35, 41, 50, 0) 69.37deg, rgba(35, 41, 50, 0) 346.88deg, #69FE8B 360deg);
-    opacity: 0.6;
+    animation: sweep 5s infinite linear;
+    background: conic-gradient(from 180deg at 50.1% 47.34%,
+      #69FE8B 0deg,
+      #3C8558 6.44deg,
+      rgba(35, 41, 50, 0) 65.61deg,
+      rgba(35, 41, 50, 0) 358.4deg,
+      #69FE8B 360deg);
+    opacity: 0.9;
+    
   }
 }
 
@@ -142,3 +148,4 @@
     transform: rotate(-360deg);
   }
 }
+
