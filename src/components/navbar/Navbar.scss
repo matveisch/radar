@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 48px 0;
+
+  #logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    h1 {
+      text-transform: uppercase;
+      color: $off-white;
+    }
+  }
+
+  #navbar-links {
+    display: flex;
+    gap: 67px;
+  }
+}
