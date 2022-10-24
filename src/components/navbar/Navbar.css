@@ -60,12 +60,24 @@
   letter-spacing: 0;
 }
 
-.App {
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 48px 0 150px 0;
+}
+#navbar #logo {
   display: flex;
   align-items: center;
-  background-color: #232932;
-  width: 100vw;
-  height: 100vh;
+  gap: 16px;
+}
+#navbar #logo h1 {
+  text-transform: uppercase;
+  color: #EEEEEE;
+}
+#navbar #navbar-links {
+  display: flex;
+  gap: 67px;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=Navbar.css.map */
