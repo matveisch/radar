@@ -64,7 +64,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 48px 0;
+  padding: 48px 0 150px 0;
 }
 #navbar #logo {
   display: flex;
