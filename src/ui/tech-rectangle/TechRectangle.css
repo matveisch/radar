@@ -60,12 +60,22 @@
   letter-spacing: 0;
 }
 
-.App {
+.tech-rectangle {
+  padding: 41px 47px;
+  background: #3A3F47;
+  box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+  border-radius: 16px;
+}
+.tech-rectangle .image-title {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
-  background-color: #232932;
-  width: 100vw;
-  height: 100vh;
+  width: 157px;
+  height: 76px;
+}
+.tech-rectangle .image-title h1 {
+  color: #EEEEEE;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=TechRectangle.css.map */

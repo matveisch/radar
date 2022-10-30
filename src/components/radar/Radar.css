@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 .H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   margin: 0;
 }
 
@@ -72,110 +72,121 @@
   height: 100%;
   position: relative;
 }
-
 #radar-container #titles {
   width: 100%;
   position: absolute;
   top: 0;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 21px;
 }
-
 #radar-container #titles h1, #radar-container #titles h2 {
   color: #EEEEEE;
 }
-
 #radar-container #titles h2 {
   text-transform: uppercase;
   font-size: 2vw;
 }
-
 #radar-container #titles h1 {
   font-size: 6vw;
 }
-
 #radar-container #background {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #232932;
 }
-
 #radar-container #background img {
   -webkit-filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
           filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
   z-index: 1;
   position: absolute;
+
   top: 110%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+
 }
+/* #radar-container #background #sound {
+  bottom: 10%;
+  left: 20%;
+  width: 5%;
+}
+#radar-container #background #graph {
+  top: 50%;
+  left: 18%;
+  width: 5%;
+}
+#radar-container #background #facebook {
+  top: 55%;
+  left: 30%;
+  width: 2.5%;
+}
+#radar-container #background #connection {
+  width: 5%;
+  top: 40%;
+  left: 40%;
+}
+#radar-container #background #messenger {
+  top: 55%;
+  left: 50%;
+  width: 5%;
+}
+#radar-container #background #social {
+  width: 6%;
+  top: 40%;
+  left: 60%;
+}
+#radar-container #background #chain {
+  width: 5%;
+  top: 70%;
+  left: 60%;
+}
+#radar-container #background #stat {
+  width: 5%;
+  bottom: 0;
+  left: 65%;
+}
+#radar-container #background #telegram {
+  width: 5%;
+  bottom: 15%;
+left: 75%;} */
+
 
 #radar-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   width: 100vw;
   height: 100vw;
   overflow: hidden;
-  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
-          transform: matrix(1, 0, 0, -1, 0, 0);
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  filter: blur(8px);
 }
-
 #radar-parent #radar {
   width: 80%;
   height: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   border-radius: 50%;
+
   rotate: 60deg;
+
   background: conic-gradient(from 180deg at 50.1% 47.34%, #69FE8B 0deg, #3C8558 6.44deg, rgba(35, 41, 50, 0) 65.61deg, rgba(35, 41, 50, 0) 358.4deg, #69FE8B 360deg);
   opacity: 0.9;
 }
 
-@-webkit-keyframes sweep {
+@keyframes sweep {
   to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 
-@keyframes sweep {
-  to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
 /*# sourceMappingURL=Radar.css.map */
