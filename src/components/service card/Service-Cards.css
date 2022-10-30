@@ -64,6 +64,8 @@
   background-color: #232932;
   border-radius: 16px;
   padding: 20px;
+  -webkit-box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+          box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
 }
 
 #card-parent #title {

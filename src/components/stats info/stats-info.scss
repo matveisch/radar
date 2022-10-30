@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+#statsParent {
+    padding: 20px 0px;
+    width: 100vw;
+    background-color: $main-green;
+
+    #stats-container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: auto;
+
+        .flexBox {
+            align-items: center;
+            display: flex;
+            max-width: 220px;
+
+            .stat-text{
+                margin-right: 10px;
+                display: inline;
+            }
+        }
+    }
+    
+}
