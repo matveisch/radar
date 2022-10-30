@@ -28,7 +28,7 @@ const Radar = () => {
                     {
                 iconsArr.map((item)=>{
                     return(<motion.img
-                    animate={{x: Math.floor(Math.random() * (1000))-500 , y: Math.floor(Math.random() * (-250)-70)}} 
+                    animate={{x: Math.floor(Math.random() * (1100))-550 , y: Math.floor(Math.random() * (-700)-70)}} 
                     transition={{
                         ease:"linear",
                         duration: 2.5,

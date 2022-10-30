@@ -61,9 +61,10 @@
 }
 
 #rtw-btn-background {
+  margin-top: 180px;
   position: relative;
   height: 450px;
-  width: 100%;
+  width: 100vw;
   background-color: #69FE8B;
 }
 

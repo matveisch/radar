@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+
+#main-container{
+    margin-top: 180px;
+    width: 100%;
+    #flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    #left-container{
+        z-index: 1;
+        width: 50%;
+        #tech-title{
+            color: $off-white;
+            margin-bottom: 60px;
+        }
+        #tech-paragraph{
+            margin-bottom: 60px;
+            color: $off-white;
+        }
+        #tech-cards-wrapper{
+            display: flex;
+            column-gap: 30px;
+            row-gap: 40px;
+            flex-wrap: wrap;
+            .tech-card{
+                flex: 2 0 calc(50% - 30px);
+            }
+        }
+    }
+    #right-container{
+        z-index: 0;
+        width: 50%;
+        position: absolute;
+        right: 0%;
+        overflow: visible;
+        #tech-radar-gif{
+            
+            position: relative;
+            right:20%;
+            width: auto;
+        }
+    }
+    }
+}

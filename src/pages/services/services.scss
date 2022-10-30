@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+#main-wrapper{
+    z-index: 1;
+    margin-top: 180px;
+    width: 100%;
+    #services-title{
+        color: $off-white;
+        margin-bottom: 60px;
+    }
+    #services-wrapper{
+        display: flex;
+        column-gap: 30px;
+        #services-paragraph{
+            color: $off-white;
+            width: 30%;
+        }
+    }
+}

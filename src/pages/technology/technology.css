@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+#main-container {
+  margin-top: 180px;
+  width: 100%;
+}
+
+#main-container #flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+#main-container #flex #left-container {
+  z-index: 1;
+  width: 50%;
+}
+
+#main-container #flex #left-container #tech-title {
+  color: #EEEEEE;
+  margin-bottom: 60px;
+}
+
+#main-container #flex #left-container #tech-paragraph {
+  margin-bottom: 60px;
+  color: #EEEEEE;
+}
+
+#main-container #flex #left-container #tech-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main-container #flex #left-container #tech-cards-wrapper .tech-card {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 calc(50% - 30px);
+          flex: 2 0 calc(50% - 30px);
+}
+
+#main-container #flex #right-container {
+  z-index: 0;
+  width: 50%;
+  position: absolute;
+  right: 0%;
+  overflow: visible;
+}
+
+#main-container #flex #right-container #tech-radar-gif {
+  position: relative;
+  right: 20%;
+  width: auto;
+}
+/*# sourceMappingURL=technology.css.map */
