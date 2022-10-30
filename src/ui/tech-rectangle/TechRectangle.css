@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 .H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin: 0;
 }
 
@@ -63,19 +63,32 @@
 .tech-rectangle {
   padding: 41px 47px;
   background: #3A3F47;
-  box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+  -webkit-box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+          box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
   border-radius: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .tech-rectangle .image-title {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 10px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 157px;
   height: 76px;
 }
+
 .tech-rectangle .image-title h1 {
   color: #EEEEEE;
 }
-
 /*# sourceMappingURL=TechRectangle.css.map */

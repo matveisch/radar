@@ -5,8 +5,11 @@
   background: $off-black;
   box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
   border-radius: 16px;
+  align-items: center;
+
 
   .image-title {
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
