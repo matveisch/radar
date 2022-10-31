@@ -8,9 +8,10 @@ interface Props {
 }
 
 const ServiceCard: React.FC<Props> = (props:Props) => {
+    console.log(props.imageURL)
     return (<div id="card-parent">
         <div>
-        <image />
+        <img id="icon" src={require(`../../images/${props.imageURL}.svg`)}/>
         <h4 id="title" className='H4'>{props.title}</h4>
         <ul>
         {

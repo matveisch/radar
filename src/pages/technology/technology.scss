@@ -21,11 +21,12 @@
         }
         #tech-cards-wrapper{
             display: flex;
-            column-gap: 30px;
+           
             row-gap: 40px;
             flex-wrap: wrap;
             .tech-card{
                 flex: 2 0 calc(50% - 30px);
+                margin-right: 30px;
             }
         }
     }

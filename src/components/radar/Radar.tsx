@@ -15,7 +15,7 @@ import telegram from '../../images/telegram.svg';
 
 const Radar = () => {
 
-    const iconsArr = [chain, facebook, graph, instagram, messenger, radar, social, stat, telegram];
+    const iconsArr = [chain, facebook, graph, instagram, messenger, radar, social, stat, telegram, sound, connection];
 
     return (
         <div id="crop">
@@ -26,7 +26,7 @@ const Radar = () => {
                 </div>
                 <div id="background">
                     {
-                iconsArr.map((item)=>{
+                    iconsArr.map((item)=>{
                     return(<motion.img
                     animate={{x: Math.floor(Math.random() * (1100))-550 , y: Math.floor(Math.random() * (-700)-70)}} 
                     transition={{
@@ -38,7 +38,7 @@ const Radar = () => {
                     src={item} alt="" id={item}/>)
                 })
             }
-                    <img src={chain} alt="" id="chain"/>
+                    {/* <img src={chain} alt="" id="chain"/>
                     <img src={connection} alt="" id="connection"/>
                     <img src={facebook} alt="" id="facebook"/>
                     <img src={graph} alt="" id="graph"/>
@@ -48,7 +48,7 @@ const Radar = () => {
                     <img src={social} alt="" id="social"/>
                     <img src={sound} alt="" id="sound"/>
                     <img src={stat} alt="" id="stat"/>
-                    <img src={telegram} alt="" id="telegram"/>
+                    <img src={telegram} alt="" id="telegram"/> */}
                 </div>
                 <div id="radar-parent">
                     <motion.div id="radar"

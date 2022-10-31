@@ -60,6 +60,12 @@
   letter-spacing: 0;
 }
 
+#icon {
+  -webkit-filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+          filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+  margin-bottom: 15px;
+}
+
 #card-parent {
   background-color: #3A3F47;
   border-radius: 16px;
