@@ -81,6 +81,14 @@
 
 #main-wrapper #services-wrapper #services-paragraph {
   color: #EEEEEE;
-  width: 30%;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+#main-wrapper #services-wrapper .service-card-wrapper {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
 }
 /*# sourceMappingURL=services.css.map */

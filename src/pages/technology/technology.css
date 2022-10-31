@@ -95,8 +95,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
   row-gap: 40px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -106,6 +104,7 @@
   -webkit-box-flex: 2;
       -ms-flex: 2 0 calc(50% - 30px);
           flex: 2 0 calc(50% - 30px);
+  margin-right: 30px;
 }
 
 #main-container #flex #right-container {

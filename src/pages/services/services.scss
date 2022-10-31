@@ -13,7 +13,10 @@
         column-gap: 30px;
         #services-paragraph{
             color: $off-white;
-            width: 30%;
+            flex:25%;
+        }
+        .service-card-wrapper{
+            flex:25%;
         }
     }
 }

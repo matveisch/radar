@@ -18,7 +18,8 @@
   }
 
   #navbar-links {
+    width: 50%;
     display: flex;
-    gap: 67px;
+    justify-content: space-between;
   }
 }

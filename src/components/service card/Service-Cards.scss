@@ -1,5 +1,10 @@
 @import '../../styles/variables';
 
+#icon{
+    filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+    margin-bottom: 15px;
+}
+
 #card-parent {
     background-color: $off-black;
     border-radius: 16px;

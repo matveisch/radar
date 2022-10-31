@@ -41,8 +41,8 @@
     height: 100%;
 
     img {
-      filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
-      //filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+      //filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
+      filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
       z-index: 1;
       position: absolute;
       top: 110%;
