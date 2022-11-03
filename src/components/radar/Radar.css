@@ -75,9 +75,7 @@
 
 #radar-container #titles {
   width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 1;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +89,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 21px;
+  gap: 20px;
 }
 
 #radar-container #titles h1, #radar-container #titles h2 {
@@ -103,20 +101,60 @@
 }
 
 #radar-container #background {
-  position: relative;
   width: 100%;
   height: 100%;
 }
 
 #radar-container #background img {
-  -webkit-filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
-          filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+  -webkit-filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
+          filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
   z-index: 1;
-  position: absolute;
-  top: 110%;
+  position: relative;
+}
+
+#radar-container #background #sound {
+  top: 40%;
+  left: 0%;
+}
+
+#radar-container #background #graph {
+  top: 0%;
+  left: 10%;
+}
+
+#radar-container #background #facebook {
+  top: 0%;
+  left: 20%;
+}
+
+#radar-container #background #connection {
+  top: 0%;
+  left: 30%;
+}
+
+#radar-container #background #messenger {
+  top: 0%;
+  left: 40%;
+}
+
+#radar-container #background #social {
+  top: 0%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+}
+
+#radar-container #background #chain {
+  top: 0%;
+  left: 60%;
+}
+
+#radar-container #background #telegram {
+  top: 0%;
+  left: 70%;
+}
+
+#radar-container #background #stat {
+  top: 50%;
+  left: 70%;
 }
 
 #radar-parent {
@@ -154,7 +192,7 @@
           align-items: center;
   overflow: hidden;
   border-radius: 50%;
-  rotate: 60deg;
+  rotate: 90deg;
   background: conic-gradient(from 180deg at 50.1% 47.34%, #69FE8B 0deg, #3C8558 6.44deg, rgba(35, 41, 50, 0) 65.61deg, rgba(35, 41, 50, 0) 358.4deg, #69FE8B 360deg);
   opacity: 0.9;
 }
