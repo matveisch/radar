@@ -11,14 +11,26 @@
     margin-bottom: 60px;
   }
   #services-wrapper {
-    display: flex;
-    column-gap: 30px;
-    #services-paragraph {
+    .services-paragraph-smaller {
       color: $off-white;
-      flex: 25%;
+
+      @media (min-width: 1365px) {
+        display: none;
+      }
     }
-    .service-card-wrapper {
-      flex: 25%;
+
+    .service-cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 30px;
+
+      .services-paragraph-bigger {
+        color: $off-white;
+
+        @media (max-width: 1365px) {
+          display: none;
+        }
+      }
     }
   }
 }

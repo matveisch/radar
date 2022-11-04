@@ -9,12 +9,17 @@ const Services = () => {
                 Our Services
             </h2>
             <div id="services-wrapper" className="paragraph">
-                <p id="services-paragraph">
+                <p className="services-paragraph-smaller">
                     Наша команда консультирует по поводу рекламной компании в
                     интернете, создание концептов рекламных компаний и
                     интеграцию в места размещения.
                 </p>
-                <div className="service-card-wrapper">
+                <div className="service-cards-container">
+                    <p className="services-paragraph-bigger">
+                        Наша команда консультирует по поводу рекламной компании
+                        в интернете, создание концептов рекламных компаний и
+                        интеграцию в места размещения.
+                    </p>
                     <ServiceCard
                         title="Telegram"
                         imageURL="telegram-circle"
@@ -24,8 +29,6 @@ const Services = () => {
                             'Интеграции',
                         ]}
                     />
-                </div>
-                <div className="service-card-wrapper">
                     <ServiceCard
                         title="Instagram"
                         imageURL="instagram"
@@ -35,8 +38,6 @@ const Services = () => {
                             'Интеграции',
                         ]}
                     />
-                </div>
-                <div className="service-card-wrapper">
                     <ServiceCard
                         title="Facebook"
                         imageURL="facebook-circle"
