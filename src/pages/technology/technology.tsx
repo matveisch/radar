@@ -22,27 +22,19 @@ const Technology = () => {
                         собственных ботов которые позволяют отслеживать рынок.
                     </p>
                     <div id="tech-cards-wrapper">
-                        <div className="tech-card">
-                            <TechRectangle
-                                img={marketTracking}
-                                title={'Market Tracking'}
-                            />
-                        </div>
-                        <div className="tech-card">
-                            <TechRectangle
-                                img={trandResearch}
-                                title={'Trand Research'}
-                            />
-                        </div>
-                        <div className="tech-card">
-                            <TechRectangle img={bots} title={'Bots'} />
-                        </div>
-                        <div className="tech-card">
-                            <TechRectangle
-                                img={automaticServices}
-                                title={'Automatic Services'}
-                            />
-                        </div>
+                        <TechRectangle
+                            img={marketTracking}
+                            title={'Market Tracking'}
+                        />
+                        <TechRectangle
+                            img={trandResearch}
+                            title={'Trand Research'}
+                        />
+                        <TechRectangle img={bots} title={'Bots'} />
+                        <TechRectangle
+                            img={automaticServices}
+                            title={'Automatic Services'}
+                        />
                     </div>
                 </div>
                 <div id="right-container">
