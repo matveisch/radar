@@ -1,0 +1,6 @@
+@import '../../styles/variables';
+
+#radar-page {
+  padding: 0 $page-padding;
+  width: calc(100vw - calc($page-padding * 2));
+}
