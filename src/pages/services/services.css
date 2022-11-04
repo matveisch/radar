@@ -63,7 +63,8 @@
 #main-wrapper {
   z-index: 1;
   margin-top: 180px;
-  width: 100%;
+  width: 80vw;
+  padding: 0 10vw;
 }
 #main-wrapper #services-title {
   color: #EEEEEE;

@@ -1,22 +1,24 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
-#main-wrapper{
-    z-index: 1;
-    margin-top: 180px;
-    width: 100%;
-    #services-title{
-        color: $off-white;
-        margin-bottom: 60px;
+#main-wrapper {
+  z-index: 1;
+  margin-top: 180px;
+  width: calc(100vw - calc($page-padding * 2));
+  padding: 0 $page-padding;
+
+  #services-title {
+    color: $off-white;
+    margin-bottom: 60px;
+  }
+  #services-wrapper {
+    display: flex;
+    column-gap: 30px;
+    #services-paragraph {
+      color: $off-white;
+      flex: 25%;
     }
-    #services-wrapper{
-        display: flex;
-        column-gap: 30px;
-        #services-paragraph{
-            color: $off-white;
-            flex:25%;
-        }
-        .service-card-wrapper{
-            flex:25%;
-        }
+    .service-card-wrapper {
+      flex: 25%;
     }
+  }
 }

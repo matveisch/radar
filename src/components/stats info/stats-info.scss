@@ -3,9 +3,9 @@
 #statsParent {
   padding: 20px $page-padding;
   background-color: $main-green;
-  position: absolute;
-  left: 0;
+  position: relative;
   width: calc(100vw - calc($page-padding * 2));
+  left: calc(-50vw + 50%);
   #stats-wrapper {
     background-color: $main-green;
   }

@@ -63,9 +63,9 @@
 #statsParent {
   padding: 20px 10vw;
   background-color: #69FE8B;
-  position: absolute;
-  left: 0;
+  position: relative;
   width: 80vw;
+  left: calc(-50vw + 50%);
 }
 #statsParent #stats-wrapper {
   background-color: #69FE8B;

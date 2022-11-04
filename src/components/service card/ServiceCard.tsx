@@ -1,5 +1,5 @@
 import React from 'react'
-import './Service-Cards.css'
+import './ServiceCard.css'
 import arrow from '../../images/Learn-more-arrow.svg'
 
 interface Props {
