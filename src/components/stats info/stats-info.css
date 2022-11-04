@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 .H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   margin: 0;
 }
 
@@ -61,46 +61,30 @@
 }
 
 #statsParent {
-  padding: 20px 0px;
-  width: 100%;
+  padding: 20px 10vw;
   background-color: #69FE8B;
+  position: absolute;
+  left: 0;
+  width: 80vw;
 }
-
 #statsParent #stats-wrapper {
-  width: 100vw;
-  height: 100%;
   background-color: #69FE8B;
 }
-
 #statsParent #stats-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  justify-content: space-between;
+  column-gap: 30px;
   margin: auto;
 }
-
 #statsParent #stats-container .flexBox {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex: 1;
+  justify-content: space-between;
 }
-
 #statsParent #stats-container .flexBox .stat-text {
   margin-right: 10px;
   display: inline;
 }
+
 /*# sourceMappingURL=stats-info.css.map */

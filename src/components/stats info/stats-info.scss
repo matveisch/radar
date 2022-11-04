@@ -1,38 +1,33 @@
 @import '../../styles/variables';
 
 #statsParent {
-    
-    padding: 20px 0px;
-    width: 100%;
-  //  width: 100vw;
+  padding: 20px $page-padding;
+  background-color: $main-green;
+  position: absolute;
+  left: 0;
+  width: calc(100vw - calc($page-padding * 2));
+  #stats-wrapper {
     background-color: $main-green;
-    #stats-wrapper{
-        width: 100vw;
-        height: 100%;
-        background-color: $main-green;
-    }
-    #stats-container{
-        display: flex;
-        justify-content: space-between;
-        column-gap: 30px;
-        margin: auto;
+  }
+  #stats-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin: auto;
 
-        .flexBox {
-            align-items: center;
-            display: flex;
-            flex: 1;
-           // max-width: 220px;
-            justify-content: space-between;
+    .flexBox {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
 
-            .stat-text{
-                margin-right: 10px;
-                
-                display: inline;
-            }
-            .stat-num{
-                
-            }
-        }
+      .stat-text {
+        margin-right: 10px;
+        display: inline;
+      }
+
+      .stat-num {
+      }
     }
-    }
-    
+  }
+}

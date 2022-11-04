@@ -1,26 +1,21 @@
-import React, {useState} from 'react';
-import { motion } from "framer-motion"
-
-import './rtw-btn.css';
-
-import chain from '../../images/chain.svg';
-import connection from '../../images/connection.svg';
-import facebook from '../../images/facebook.svg';
-import graph from '../../images/graph.svg';
-import instagram from '../../images/instagram.svg';
-import messenger from '../../images/messenger.svg';
-import radar from '../../images/radar.svg';
-import social from '../../images/social.svg';
-import sound from '../../images/sound.svg';
-import stat from '../../images/stat.svg';
-import telegram from '../../images/telegram.svg';
+import React, { useState } from 'react'
+import { motion } from 'framer-motion'
+import './rtw-btn.css'
+import chain from '../../images/chain.svg'
+import facebook from '../../images/facebook.svg'
+import graph from '../../images/graph.svg'
+import instagram from '../../images/instagram.svg'
+import messenger from '../../images/messenger.svg'
+import radar from '../../images/radar.svg'
+import social from '../../images/social.svg'
+import stat from '../../images/stat.svg'
+import telegram from '../../images/telegram.svg'
 
 const RtwBtn = () => {
+    const [hovered, setHovered] = useState(false)
 
-    const [hovered, setHovered] = useState(false);
-    
-    function getRand(from: number, to:number){
-        let rand = 0;
+    function getRand(from: number, to: number) {
+        let rand = 0
         // if(type==="x"){
         //     while(-220<rand && rand<220){
         //         rand = Math.floor(Math.random() * (to-from+1))+from
@@ -35,36 +30,65 @@ const RtwBtn = () => {
 
         // }
         // console.log(rand + " " + type)
-        return Math.floor(Math.random() * (to-from+1))+from;
+        return Math.floor(Math.random() * (to - from + 1)) + from
     }
 
+    const iconsArr = [
+        chain,
+        facebook,
+        graph,
+        instagram,
+        messenger,
+        radar,
+        social,
+        stat,
+        telegram,
+    ]
 
-   
-    
-    const iconsArr = [chain, facebook, graph, instagram, messenger, radar, social, stat, telegram];
-
-    
-    return(
+    return (
         <div id="rtw-btn-background">
-            <motion.div id="rtw-btn-container"
-            animate={{background:hovered ? "radial-gradient(25.8% 50% at 50% 50%, rgba(35, 41, 50, 0.8) 0%, rgba(105, 254, 139, 0) 100%)" : "radial-gradient(25.8% 50% at 50% 50%, rgba(105, 254, 139, 0.8) 0%, rgba(105, 254, 139, 0.8) 100%)"}}>
-                
-                {
-                    
-                iconsArr.map((item)=>{
-                    return(<motion.img
-                        initial={false} 
-                animate={{ y: hovered ? 1 : 0, x: hovered ? 1 : 0, rotate: hovered ? getRand(-50, 50) : 0}} 
-                transition={{
-                    x:{type:hovered ? "inertia" : "just", velocity:getRand(-350, 350), power: 1},
-                    y:{type:hovered ? "inertia" : "just", velocity:getRand(-90, 90), power: 2},
-                    rotate:{type:hovered ? "inertia" : "just", velocity:getRand(-50, 50)}
+            <motion.div
+                id="rtw-btn-container"
+                animate={{
+                    background: hovered
+                        ? 'radial-gradient(25.8% 50% at 50% 50%, rgba(35, 41, 50, 0.8) 0%, rgba(105, 254, 139, 0) 100%)'
+                        : 'radial-gradient(25.8% 50% at 50% 50%, rgba(105, 254, 139, 0.8) 0%, rgba(105, 254, 139, 0.8) 100%)',
                 }}
-                src={item} alt={item}/>)
-                })
-            }
+            >
+                {iconsArr.map((item, index) => {
+                    return (
+                        <motion.img
+                            initial={false}
+                            animate={{
+                                y: hovered ? 1 : 0,
+                                x: hovered ? 1 : 0,
+                                rotate: hovered ? getRand(-50, 50) : 0,
+                            }}
+                            transition={{
+                                x: {
+                                    type: hovered ? 'inertia' : 'just',
+                                    velocity: getRand(-350, 350),
+                                    power: 1,
+                                },
+                                y: {
+                                    type: hovered ? 'inertia' : 'just',
+                                    velocity: getRand(-90, 90),
+                                    power: 2,
+                                },
+                                rotate: {
+                                    type: hovered ? 'inertia' : 'just',
+                                    velocity: getRand(-50, 50),
+                                },
+                            }}
+                            src={item}
+                            key={index}
+                            alt={item}
+                        />
+                    )
+                })}
 
-                {/* <motion.img 
+                {/*
+                <motion.img
                 animate={{x: hovered ? getRund(-200, 200) : 0 , y: hovered ? getRund(-100, 100) : 0}} 
                 
                 src={chain} alt="" id="chain"/>
@@ -97,22 +121,19 @@ const RtwBtn = () => {
                 src={stat} alt="" id="stat"/>
                 <motion.img 
                 animate={{x: hovered ? -250 : 0 , y: hovered ? 120 : 0}} 
-                src={telegram} alt="" id="telegram"/> */}
+                src={telegram} alt="" id="telegram"/>
+                */}
             </motion.div>
-            
-        <motion.button id="rtw-btn" 
-        
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-        
-        className='H3'
-        >
-            READY TO WORK?
-        </motion.button>
-        
+            <motion.button
+                id="rtw-btn"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                className="H3"
+            >
+                READY TO WORK?
+            </motion.button>
         </div>
     )
 }
 
-
-export default RtwBtn;
+export default RtwBtn

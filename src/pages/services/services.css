@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 .H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   margin: 0;
 }
 
@@ -65,30 +65,20 @@
   margin-top: 180px;
   width: 100%;
 }
-
 #main-wrapper #services-title {
   color: #EEEEEE;
   margin-bottom: 60px;
 }
-
 #main-wrapper #services-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  column-gap: 30px;
 }
-
 #main-wrapper #services-wrapper #services-paragraph {
   color: #EEEEEE;
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
+  flex: 25%;
+}
+#main-wrapper #services-wrapper .service-card-wrapper {
+  flex: 25%;
 }
 
-#main-wrapper #services-wrapper .service-card-wrapper {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
-}
 /*# sourceMappingURL=services.css.map */

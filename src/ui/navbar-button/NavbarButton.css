@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 .H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   margin: 0;
 }
 
@@ -68,9 +68,8 @@
   border: none;
   cursor: pointer;
 }
-
 .navbar-button:hover {
-  -webkit-box-shadow: 0 0 0 2px #69FE8B;
-          box-shadow: 0 0 0 2px #69FE8B;
+  box-shadow: 0 0 0 2px #69FE8B;
 }
+
 /*# sourceMappingURL=NavbarButton.css.map */

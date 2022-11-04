@@ -1,7 +1,7 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
-import App from "../App";
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './Layout'
+import App from '../App'
 
 const RouteSwitch = () => {
     return (
@@ -12,7 +12,7 @@ const RouteSwitch = () => {
                 </Route>
             </Routes>
         </BrowserRouter>
-    );
-};
+    )
+}
 
-export default RouteSwitch;
+export default RouteSwitch
