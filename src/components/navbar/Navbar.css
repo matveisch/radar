@@ -76,8 +76,7 @@
   color: #EEEEEE;
 }
 #navbar #navbar-links {
+  width: 50%;
   display: flex;
   justify-content: space-between;
-}
-
-/*# sourceMappingURL=Navbar.css.map */
+}/*# sourceMappingURL=Navbar.css.map */

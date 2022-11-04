@@ -73,7 +73,8 @@
 #statsParent #stats-container {
   display: flex;
   justify-content: space-between;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   margin: auto;
 }
 #statsParent #stats-container .flexBox {
@@ -85,6 +86,4 @@
 #statsParent #stats-container .flexBox .stat-text {
   margin-right: 10px;
   display: inline;
-}
-
-/*# sourceMappingURL=stats-info.css.map */
+}/*# sourceMappingURL=stats-info.css.map */

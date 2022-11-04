@@ -93,12 +93,8 @@
   width: 50%;
   position: absolute;
   right: 0;
-  overflow: visible;
 }
 #main-container #flex #right-container #tech-radar-gif {
-  width: 100%;
   position: relative;
   right: 20%;
-}
-
-/*# sourceMappingURL=technology.css.map */
+}/*# sourceMappingURL=technology.css.map */
