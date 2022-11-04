@@ -162,10 +162,14 @@
   opacity: 0.9;
 }
 
-@keyframes sweep {
+@-webkit-keyframes sweep {
   to {
     transform: rotate(-360deg);
   }
 }
 
-/*# sourceMappingURL=Radar.css.map */
+@keyframes sweep {
+  to {
+    transform: rotate(-360deg);
+  }
+}/*# sourceMappingURL=Radar.css.map */

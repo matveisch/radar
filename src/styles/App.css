@@ -60,13 +60,15 @@
   letter-spacing: 0;
 }
 
-.App {
+.MainWrapper {
+  width: 100vw;
+  overflow: hidden;
+}
+.MainWrapper .App {
   display: flex;
   align-items: center;
   background-color: #232932;
   width: 100vw;
   max-width: 1400px;
   margin: auto;
-}
-
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */

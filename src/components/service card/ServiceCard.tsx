@@ -25,7 +25,7 @@ const ServiceCard: React.FC<Props> = (props: Props) => {
                         return (
                             <li
                                 key={index}
-                                id="list-item"
+                                id={"list-item-"+index}
                                 className="light-paragraph"
                             >
                                 <span>{item}</span>

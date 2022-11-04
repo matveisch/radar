@@ -8,6 +8,7 @@ import RadarPage from './pages/radar-page/RadarPage'
 
 function App() {
     return (
+        <div className="MainWrapper">
         <div
             className="App"
             style={{ display: 'flex', flexDirection: 'column' }}
@@ -17,6 +18,8 @@ function App() {
             <Services />
             <Technology />
             <RtwBtn />
+        </div>
+
         </div>
     )
 }

@@ -66,35 +66,77 @@
 }
 
 #card-parent {
+  height: 255px;
+  position: relative;
   background-color: #3A3F47;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+  transition: 0.5s;
 }
 #card-parent #title {
   color: #69FE8B;
+  position: relative;
+  transition: 0.5s;
 }
 #card-parent ul {
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   margin-bottom: 20px;
 }
-#card-parent ul #list-item {
+#card-parent ul li {
   margin-bottom: 5px;
   color: #69FE8B;
 }
-#card-parent ul #list-item span {
+#card-parent ul li span {
   color: #EEEEEE;
 }
+#card-parent ul #list-item-3 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+#card-parent ul #list-item-4 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
 #card-parent #learn-more-parent {
+  position: absolute;
   display: flex;
+  bottom: 20px;
+  right: 20px;
   align-items: end;
   text-align: right;
+  transition: 0.5s;
 }
 #card-parent #learn-more-parent #learn-more {
   margin-left: auto;
   color: #69FE8B;
   margin-right: 8px;
 }
-
-/*# sourceMappingURL=ServiceCard.css.map */
+#card-parent:hover {
+  scale: 1.06;
+  box-shadow: 3px 3px 32px rgba(0, 239, 56, 0.194);
+}
+#card-parent:hover #title {
+  margin-left: 70px;
+  margin-top: -60px;
+}
+#card-parent:hover ul #list-item-3 {
+  margin-bottom: 5px;
+  color: #69FE8B;
+  opacity: 1;
+  visibility: visible;
+}
+#card-parent:hover ul #list-item-4 {
+  opacity: 1;
+  visibility: visible;
+}
+#card-parent:hover #learn-more-parent {
+  margin-top: 70px;
+  margin-right: 20px;
+  scale: 1.2;
+}/*# sourceMappingURL=ServiceCard.css.map */
