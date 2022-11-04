@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 .H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   margin: 0;
 }
 
@@ -61,8 +61,7 @@
 }
 
 #icon {
-  -webkit-filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
-          filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+  filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
   margin-bottom: 15px;
 }
 
@@ -70,42 +69,32 @@
   background-color: #3A3F47;
   border-radius: 16px;
   padding: 20px;
-  -webkit-box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
-          box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+  box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
 }
-
 #card-parent #title {
   color: #69FE8B;
 }
-
 #card-parent ul {
   padding-left: 20px;
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
 #card-parent ul #list-item {
   margin-bottom: 5px;
   color: #69FE8B;
 }
-
 #card-parent ul #list-item span {
   color: #EEEEEE;
 }
-
 #card-parent #learn-more-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
   text-align: right;
 }
-
 #card-parent #learn-more-parent #learn-more {
   margin-left: auto;
   color: #69FE8B;
   margin-right: 8px;
 }
-/*# sourceMappingURL=Service-Cards.css.map */
+
+/*# sourceMappingURL=ServiceCard.css.map */

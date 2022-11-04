@@ -3,8 +3,8 @@
 #navbar {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding: 48px 0 150px 0;
+  padding: 48px $page-padding 150px $page-padding;
+  width: calc(100vw - calc($page-padding * 2));
 
   #logo {
     display: flex;
@@ -18,7 +18,7 @@
   }
 
   #navbar-links {
-    width: 50%;
+    //width: 50%;
     display: flex;
     justify-content: space-between;
   }

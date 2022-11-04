@@ -60,13 +60,9 @@
   letter-spacing: 0;
 }
 
-.App {
-  display: flex;
-  align-items: center;
-  background-color: #232932;
-  width: 100vw;
-  max-width: 1400px;
-  margin: auto;
+#radar-page {
+  padding: 0 10vw;
+  width: 80vw;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=RadarPage.css.map */
