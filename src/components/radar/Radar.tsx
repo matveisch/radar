@@ -175,7 +175,10 @@ const Radar = () => {
                 <div id="radar-parent">
                     <motion.div
                         id="radar"
-                        animate={{ rotate: -270, opacity: 0.3 }}
+                        animate={{
+                            rotate: -270,
+                            opacity: 0.3,
+                        }}
                         transition={{
                             default: {
                                 ease: 'linear',
@@ -187,6 +190,11 @@ const Radar = () => {
                                 ease: 'linear',
                                 repeat: Infinity,
                                 duration: 0.8,
+                                repeatType: 'reverse',
+                            },
+                            background: {
+                                repeat: Infinity,
+                                duration: 5,
                                 repeatType: 'reverse',
                             },
                         }}

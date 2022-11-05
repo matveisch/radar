@@ -21,5 +21,47 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
+
+    #contact-btn {
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      border: 3px solid $main-green;
+      transition: 0.3s;
+      a {
+        padding: 10px 35px;
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: $main-green;
+          height: 100%;
+          width: 0px;
+          left: 50%;
+          bottom: -8px;
+          transition: 0.3s;
+          border-radius: 3px;
+        }
+      }
+
+      &:hover {
+        background-color: $main-green;
+        a {
+          color: $black;
+          font-weight: 800;
+
+          &::after {
+            content: '';
+            position: absolute;
+            background-color: $main-green;
+            height: 3px;
+            width: 0px;
+            left: 50%;
+            bottom: -8px;
+            transition: 0.3s;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
   }
 }

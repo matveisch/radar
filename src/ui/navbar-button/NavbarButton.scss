@@ -1,14 +1,35 @@
 @import '../../styles/variables';
 
 .navbar-button {
-  padding: 10px 35px;
+  position: relative;
+  padding: 10px 0px;
+  opacity: 0.6;
   background-color: unset;
   color: $off-white;
   border-radius: 49px;
   border: none;
   cursor: pointer;
+  transition: 0.2s;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $main-green;
+    height: 3px;
+    width: 0px;
+    left: 50%;
+    bottom: -8px;
+    transition: 0.3s;
+    border-radius: 3px;
+  }
 
   &:hover {
-    box-shadow: 0 0 0 2px #69FE8B;
+    opacity: 1;
+    // border-bottom: 2px solid $main-green;
+    &::after {
+      width: 100%;
+      left: 0;
+    }
   }
 }

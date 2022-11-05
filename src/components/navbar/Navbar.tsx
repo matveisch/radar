@@ -14,7 +14,9 @@ const Navbar = () => {
                 <NavbarButton buttonName={'Services'} linkTo={'/'} />
                 <NavbarButton buttonName={'About us'} linkTo={'/'} />
                 <NavbarButton buttonName={'Research'} linkTo={'/'} />
-                <NavbarButton buttonName={'Contact'} linkTo={'/'} />
+                <div id="contact-btn">
+                    <NavbarButton buttonName={'Contact'} linkTo={'/'} />
+                </div>
             </div>
         </nav>
     )

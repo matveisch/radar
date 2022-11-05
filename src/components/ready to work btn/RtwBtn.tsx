@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import './rtw-btn.css'
+import './RtwBtn.css'
 import chain from '../../images/chain.svg'
 import facebook from '../../images/facebook.svg'
 import graph from '../../images/graph.svg'
@@ -53,6 +53,11 @@ const RtwBtn = () => {
                     background: hovered
                         ? 'radial-gradient(25.8% 50% at 50% 50%, rgba(35, 41, 50, 0.8) 0%, rgba(105, 254, 139, 0) 100%)'
                         : 'radial-gradient(25.8% 50% at 50% 50%, rgba(105, 254, 139, 0.8) 0%, rgba(105, 254, 139, 0.8) 100%)',
+                }}
+                transition={{
+                    background: {
+                        duration: 0.7,
+                    },
                 }}
             >
                 {iconsArr.map((item, index) => {
