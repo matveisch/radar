@@ -14,7 +14,10 @@ const Navbar = () => {
                 <NavbarButton buttonName={'Services'} linkTo={'/'} />
                 <NavbarButton buttonName={'About us'} linkTo={'/'} />
                 <NavbarButton buttonName={'Research'} linkTo={'/'} />
-                <NavbarButton buttonName={'Contact'} linkTo={'/contact'} />
+                <div id="contact-btn">
+                    <NavbarButton buttonName={'Contact'} linkTo={'/contact'} />
+                </div>
+
             </div>
         </nav>
     )

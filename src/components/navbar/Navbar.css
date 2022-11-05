@@ -79,4 +79,43 @@
   width: 50%;
   display: flex;
   justify-content: space-between;
+}
+#navbar #navbar-links #contact-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 3px solid #69FE8B;
+  transition: 0.3s;
+}
+#navbar #navbar-links #contact-btn a {
+  padding: 10px 35px;
+}
+#navbar #navbar-links #contact-btn a::after {
+  content: "";
+  position: absolute;
+  background-color: #69FE8B;
+  height: 100%;
+  width: 0px;
+  left: 50%;
+  bottom: -8px;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+#navbar #navbar-links #contact-btn:hover {
+  background-color: #69FE8B;
+}
+#navbar #navbar-links #contact-btn:hover a {
+  color: #232932;
+  font-weight: 800;
+}
+#navbar #navbar-links #contact-btn:hover a::after {
+  content: "";
+  position: absolute;
+  background-color: #69FE8B;
+  height: 3px;
+  width: 0px;
+  left: 50%;
+  bottom: -8px;
+  transition: 0.3s;
+  border-radius: 3px;
 }/*# sourceMappingURL=Navbar.css.map */
