@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+
+.form-container {
+  width: 441px;
+
+  .single-input {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+      background: $black;
+      border-radius: 3px;
+      color: $off-white;
+      border: none;
+      padding: 9px 7px;
+      border-bottom: 1.5px solid $off-white;
+    }
+  }
+
+  .contact-form {
+    background: $off-black;
+    box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+    border-radius: 16px;
+    padding: 67px 33px 34px;
+
+    display: flex;
+    flex-direction: column;
+
+    .button-container {
+      display: flex;
+      justify-content: end;
+    }
+
+    .email-button {
+      color: $main-green;
+      background-color: unset;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .send-button {
+      border: 2px solid #69fe8b;
+      border-radius: 16px;
+      background-color: unset;
+      color: $main-green;
+      padding: 16px 0;
+    }
+
+    .contact-within {
+      color: $off-white;
+    }
+  }
+}
