@@ -1,14 +1,18 @@
 @import '../../styles/variables';
 
 .navbar-button {
-  padding: 10px 35px;
+  padding: 10px 1vw;
   background-color: unset;
   color: $off-white;
   border-radius: 49px;
   border: none;
   cursor: pointer;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &:hover {
-    box-shadow: 0 0 0 2px #69FE8B;
+    box-shadow: 0 0 0 2px #69fe8b;
   }
 }
