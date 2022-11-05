@@ -60,19 +60,50 @@
   letter-spacing: 0;
 }
 
-.navbar-button {
-  padding: 10px 1vw;
-  background-color: unset;
-  color: #EEEEEE;
-  border-radius: 49px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-container {
+  width: 441px;
 }
-.navbar-button:hover {
-  box-shadow: 0 0 0 2px #69fe8b;
+.form-container .single-input {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .single-input input,
+.form-container .single-input textarea {
+  background: #232932;
+  border-radius: 3px;
+  color: #EEEEEE;
+  border: none;
+  padding: 9px 7px;
+  border-bottom: 1.5px solid #EEEEEE;
+}
+.form-container .contact-form {
+  background: #3A3F47;
+  box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+  border-radius: 16px;
+  padding: 67px 33px 34px;
+  display: flex;
+  flex-direction: column;
+}
+.form-container .contact-form .button-container {
+  display: flex;
+  justify-content: end;
+}
+.form-container .contact-form .email-button {
+  color: #69FE8B;
+  background-color: unset;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.form-container .contact-form .send-button {
+  border: 2px solid #69fe8b;
+  border-radius: 16px;
+  background-color: unset;
+  color: #69FE8B;
+  padding: 16px 0;
+}
+.form-container .contact-form .contact-within {
+  color: #EEEEEE;
 }
 
-/*# sourceMappingURL=NavbarButton.css.map */
+/*# sourceMappingURL=ContactForm.css.map */
