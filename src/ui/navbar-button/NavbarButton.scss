@@ -1,9 +1,11 @@
 @import '../../styles/variables';
 
 .navbar-button {
+
   position: relative;
   padding: 10px 0px;
   opacity: 0.6;
+
   background-color: unset;
   color: $off-white;
   border-radius: 49px;
@@ -24,12 +26,18 @@
     border-radius: 3px;
   }
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &:hover {
+
     opacity: 1;
     // border-bottom: 2px solid $main-green;
     &::after {
       width: 100%;
       left: 0;
     }
+
   }
 }

@@ -15,8 +15,9 @@ const Navbar = () => {
                 <NavbarButton buttonName={'About us'} linkTo={'/'} />
                 <NavbarButton buttonName={'Research'} linkTo={'/'} />
                 <div id="contact-btn">
-                    <NavbarButton buttonName={'Contact'} linkTo={'/'} />
+                    <NavbarButton buttonName={'Contact'} linkTo={'/contact'} />
                 </div>
+
             </div>
         </nav>
     )
