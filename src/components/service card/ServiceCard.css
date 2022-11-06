@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
-.H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
   font-family: "Mulish", sans-serif;
   margin: 0;
 }
@@ -9,6 +16,11 @@
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
 }
 
 .H2 {
@@ -68,14 +80,14 @@
 #card-parent {
   height: 255px;
   position: relative;
-  background-color: #3A3F47;
+  background-color: #3a3f47;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
   transition: 0.5s;
 }
 #card-parent #title {
-  color: #69FE8B;
+  color: #69fe8b;
   position: relative;
   transition: 0.5s;
 }
@@ -88,10 +100,10 @@
 }
 #card-parent ul li {
   margin-bottom: 5px;
-  color: #69FE8B;
+  color: #69fe8b;
 }
 #card-parent ul li span {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 #card-parent ul #list-item-3 {
   opacity: 0;
@@ -114,7 +126,7 @@
 }
 #card-parent #learn-more-parent #learn-more {
   margin-left: auto;
-  color: #69FE8B;
+  color: #69fe8b;
   margin-right: 8px;
 }
 #card-parent:hover {
@@ -127,7 +139,7 @@
 }
 #card-parent:hover ul #list-item-3 {
   margin-bottom: 5px;
-  color: #69FE8B;
+  color: #69fe8b;
   opacity: 1;
   visibility: visible;
 }

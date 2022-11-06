@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+@import './breakpoints';
 
 // colors
-$off-white: #EEEEEE;
-$off-black: #3A3F47;
+$off-white: #eeeeee;
+$off-black: #3a3f47;
 $black: #232932;
-$main-green: #69FE8B;
+$main-green: #69fe8b;
 
 // fonts
-.H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
   font-family: 'Mulish', sans-serif;
   margin: 0;
 }
@@ -20,6 +28,9 @@ $page-padding: 10vw;
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
+  @include md {
+    font-size: 20px;
+  }
 }
 
 .H2 {

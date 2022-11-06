@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
-.H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
   font-family: "Mulish", sans-serif;
   margin: 0;
 }
@@ -9,6 +16,11 @@
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
 }
 
 .H2 {
@@ -71,13 +83,13 @@
 .form-container .single-input textarea {
   background: #232932;
   border-radius: 3px;
-  color: #EEEEEE;
+  color: #eeeeee;
   border: none;
   padding: 9px 7px;
-  border-bottom: 1.5px solid #EEEEEE;
+  border-bottom: 1.5px solid #eeeeee;
 }
 .form-container .contact-form {
-  background: #3A3F47;
+  background: #3a3f47;
   box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
   border-radius: 16px;
   padding: 67px 33px 34px;
@@ -89,7 +101,7 @@
   justify-content: end;
 }
 .form-container .contact-form .email-button {
-  color: #69FE8B;
+  color: #69fe8b;
   background-color: unset;
   border: 0;
   padding: 0;
@@ -99,11 +111,9 @@
   border: 2px solid #69fe8b;
   border-radius: 16px;
   background-color: unset;
-  color: #69FE8B;
+  color: #69fe8b;
   padding: 16px 0;
 }
 .form-container .contact-form .contact-within {
-  color: #EEEEEE;
-}
-
-/*# sourceMappingURL=ContactForm.css.map */
+  color: #eeeeee;
+}/*# sourceMappingURL=ContactForm.css.map */

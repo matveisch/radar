@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
-.H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
   font-family: "Mulish", sans-serif;
   margin: 0;
 }
@@ -9,6 +16,11 @@
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
 }
 
 .H2 {
@@ -62,13 +74,13 @@
 
 #statsParent {
   padding: 20px 10vw;
-  background-color: #69FE8B;
+  background-color: #69fe8b;
   position: relative;
   width: 80vw;
   left: calc(-50vw + 50%);
 }
 #statsParent #stats-wrapper {
-  background-color: #69FE8B;
+  background-color: #69fe8b;
 }
 #statsParent #stats-container {
   display: flex;
