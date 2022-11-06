@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
-.H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
   font-family: "Mulish", sans-serif;
   margin: 0;
 }
@@ -9,6 +16,11 @@
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
 }
 
 .H2 {
@@ -73,7 +85,7 @@
 }
 #navbar #logo h1 {
   text-transform: uppercase;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 #navbar #navbar-links {
   width: 50%;
@@ -84,7 +96,7 @@
   display: flex;
   align-items: center;
   border-radius: 30px;
-  border: 3px solid #69FE8B;
+  border: 3px solid #69fe8b;
   transition: 0.3s;
 }
 #navbar #navbar-links #contact-btn a {
@@ -93,7 +105,7 @@
 #navbar #navbar-links #contact-btn a::after {
   content: "";
   position: absolute;
-  background-color: #69FE8B;
+  background-color: #69fe8b;
   height: 100%;
   width: 0px;
   left: 50%;
@@ -102,7 +114,7 @@
   border-radius: 3px;
 }
 #navbar #navbar-links #contact-btn:hover {
-  background-color: #69FE8B;
+  background-color: #69fe8b;
 }
 #navbar #navbar-links #contact-btn:hover a {
   color: #232932;
@@ -111,7 +123,7 @@
 #navbar #navbar-links #contact-btn:hover a::after {
   content: "";
   position: absolute;
-  background-color: #69FE8B;
+  background-color: #69fe8b;
   height: 3px;
   width: 0px;
   left: 50%;

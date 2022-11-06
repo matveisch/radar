@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
-.H1, .H2, .H3, .H4, .paragraph, .link, .light-paragraph, .light-link {
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
   font-family: "Mulish", sans-serif;
   margin: 0;
 }
@@ -9,6 +16,11 @@
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
 }
 
 .H2 {
@@ -67,11 +79,11 @@
   padding: 0 10vw;
 }
 #main-wrapper #services-title {
-  color: #EEEEEE;
+  color: #eeeeee;
   margin-bottom: 60px;
 }
 #main-wrapper #services-wrapper .services-paragraph-smaller {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 @media (min-width: 1365px) {
   #main-wrapper #services-wrapper .services-paragraph-smaller {
@@ -84,7 +96,7 @@
   grid-gap: 30px;
 }
 #main-wrapper #services-wrapper .service-cards-container .services-paragraph-bigger {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 @media (max-width: 1365px) {
   #main-wrapper #services-wrapper .service-cards-container .services-paragraph-bigger {
