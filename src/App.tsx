@@ -1,7 +1,6 @@
 import React from 'react'
 import './styles/App.css'
 import RtwBtn from './components/ready to work btn/RtwBtn'
-import Navbar from './components/navbar/Navbar'
 import Technology from './pages/technology/technology'
 import Services from './pages/services/services'
 import RadarPage from './pages/radar-page/RadarPage'
@@ -13,7 +12,6 @@ function App() {
                 className="App"
                 style={{ display: 'flex', flexDirection: 'column' }}
             >
-                <Navbar />
                 <RadarPage />
                 <Services />
                 <Technology />
