@@ -1,10 +1,12 @@
 import React from 'react'
 import ContactForm from '../../components/contact-form/ContactForm'
+import CircleContact from '../../components/circle-contact/CircleContact'
+import './Contact.css'
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Contact</h1>
+        <div id="contact-page">
+            <CircleContact />
             <ContactForm />
         </div>
     )

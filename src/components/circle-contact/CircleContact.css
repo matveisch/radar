@@ -1,0 +1,27 @@
+.circle {
+  width: 429px;
+  height: 429px;
+  border-radius: 50%;
+}
+
+.circle-group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-group .upper-circle {
+  background: conic-gradient(from 180deg at 50% 50%, #69FE8B 0deg, rgba(58, 63, 71, 0) 360deg);
+  width: 428px;
+  height: 428px;
+}
+.circle-group .lower-circle {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(35, 41, 50, 0) 0%, #232932 100%);
+  position: absolute;
+}
+
+.second-circle {
+  transform: rotate(-180deg);
+}
+
+/*# sourceMappingURL=CircleContact.css.map */

@@ -75,7 +75,7 @@
 #navbar {
   display: flex;
   justify-content: space-between;
-  padding: 48px 10vw 150px 10vw;
+  padding: 48px 10vw 48px 10vw;
   width: 80vw;
 }
 #navbar #logo {
@@ -107,7 +107,7 @@
   position: absolute;
   background-color: #69fe8b;
   height: 100%;
-  width: 0px;
+  width: 0;
   left: 50%;
   bottom: -8px;
   transition: 0.3s;
@@ -125,9 +125,11 @@
   position: absolute;
   background-color: #69fe8b;
   height: 3px;
-  width: 0px;
+  width: 0;
   left: 50%;
   bottom: -8px;
   transition: 0.3s;
   border-radius: 3px;
-}/*# sourceMappingURL=Navbar.css.map */
+}
+
+/*# sourceMappingURL=Navbar.css.map */

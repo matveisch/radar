@@ -73,6 +73,7 @@
 }
 
 .form-container {
+  margin-top: 102px;
   width: 441px;
 }
 .form-container .single-input {
@@ -116,4 +117,6 @@
 }
 .form-container .contact-form .contact-within {
   color: #eeeeee;
-}/*# sourceMappingURL=ContactForm.css.map */
+}
+
+/*# sourceMappingURL=ContactForm.css.map */

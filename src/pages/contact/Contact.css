@@ -72,9 +72,10 @@
   letter-spacing: 0;
 }
 
-#radar-page {
-  padding: 102px 10vw 0;
-  width: 80vw;
+#contact-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw;
 }
 
-/*# sourceMappingURL=RadarPage.css.map */
+/*# sourceMappingURL=Contact.css.map */
