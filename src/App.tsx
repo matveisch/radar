@@ -1,13 +1,26 @@
-import React from 'react';
-import './styles/App.css';
-import Radar from "./components/radar/Radar";
+import React from 'react'
+import './styles/App.css'
+import RtwBtn from './components/ready to work btn/RtwBtn'
+import Navbar from './components/navbar/Navbar'
+import Technology from './pages/technology/technology'
+import Services from './pages/services/services'
+import RadarPage from './pages/radar-page/RadarPage'
 
 function App() {
     return (
-        <div className="App" style={{display: 'flex', flexDirection: 'column'}}>
-            <Radar />
+        <div className="MainWrapper">
+            <div
+                className="App"
+                style={{ display: 'flex', flexDirection: 'column' }}
+            >
+                <Navbar />
+                <RadarPage />
+                <Services />
+                <Technology />
+                <RtwBtn />
+            </div>
         </div>
-    );
+    )
 }
 
-export default App;
+export default App

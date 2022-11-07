@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+.navbar-button {
+  position: relative;
+  padding: 10px 0px;
+  opacity: 0.6;
+  background-color: unset;
+  color: #eeeeee;
+  border-radius: 49px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-button::after {
+  content: "";
+  position: absolute;
+  background-color: #69fe8b;
+  height: 3px;
+  width: 0px;
+  left: 50%;
+  bottom: -8px;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+.navbar-button:hover {
+  opacity: 1;
+}
+.navbar-button:hover::after {
+  width: 100%;
+  left: 0;
+}/*# sourceMappingURL=NavbarButton.css.map */

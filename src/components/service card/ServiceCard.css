@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+#icon {
+  filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+  margin-bottom: 15px;
+}
+
+#card-parent {
+  height: 255px;
+  position: relative;
+  background-color: #3a3f47;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
+  transition: 0.5s;
+}
+#card-parent #title {
+  color: #69fe8b;
+  position: relative;
+  transition: 0.5s;
+}
+#card-parent ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#card-parent ul li {
+  margin-bottom: 5px;
+  color: #69fe8b;
+}
+#card-parent ul li span {
+  color: #eeeeee;
+}
+#card-parent ul #list-item-3 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+#card-parent ul #list-item-4 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+#card-parent #learn-more-parent {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  right: 20px;
+  align-items: end;
+  text-align: right;
+  transition: 0.5s;
+}
+#card-parent #learn-more-parent #learn-more {
+  margin-left: auto;
+  color: #69fe8b;
+  margin-right: 8px;
+}
+#card-parent:hover {
+  scale: 1.06;
+  box-shadow: 3px 3px 32px rgba(0, 239, 56, 0.194);
+}
+#card-parent:hover #title {
+  margin-left: 70px;
+  margin-top: -60px;
+}
+#card-parent:hover ul #list-item-3 {
+  margin-bottom: 5px;
+  color: #69fe8b;
+  opacity: 1;
+  visibility: visible;
+}
+#card-parent:hover ul #list-item-4 {
+  opacity: 1;
+  visibility: visible;
+}
+#card-parent:hover #learn-more-parent {
+  margin-top: 70px;
+  margin-right: 20px;
+  scale: 1.2;
+}/*# sourceMappingURL=ServiceCard.css.map */

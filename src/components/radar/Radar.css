@@ -1,60 +1,152 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
 #crop {
   width: 100%;
-  height: 50vw;
+  height: 40vw;
   overflow: hidden;
 }
 
 #radar-container {
   width: 100%;
-  height: 700px;
+  height: 100%;
   position: relative;
 }
-#radar-container h1 {
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 62px;
-  position: absolute;
-  top: 30px;
-  width: 100vw;
+#radar-container #titles {
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#radar-container #titles h1,
+#radar-container #titles h2 {
+  color: #eeeeee;
+}
+#radar-container #titles h1 {
   text-align: center;
-  color: white;
-  z-index: 1;
+}
+#radar-container #titles h2 {
+  text-transform: uppercase;
 }
 #radar-container #background {
-  position: relative;
   width: 100%;
   height: 100%;
-  background: #232932;
 }
 #radar-container #background img {
+  filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
   z-index: 1;
-  position: absolute;
-}
-#radar-container #background #at {
-  top: 60%;
-  left: 40%;
+  position: relative;
 }
 #radar-container #background #sound {
-  top: 50%;
-  left: 20%;
+  top: 40%;
+  left: 0%;
+}
+#radar-container #background #graph {
+  top: 0%;
+  left: 10%;
 }
 #radar-container #background #facebook {
-  top: 30%;
-  left: 35%;
+  top: 0%;
+  left: 20%;
 }
 #radar-container #background #connection {
-  top: 20%;
-  left: 45%;
+  top: 0%;
+  left: 30%;
 }
 #radar-container #background #messenger {
-  top: 35%;
-  left: 50%;
+  top: 0%;
+  left: 40%;
 }
 #radar-container #background #social {
-  top: 25%;
+  top: 0%;
+  left: 50%;
+}
+#radar-container #background #chain {
+  top: 0%;
   left: 60%;
+}
+#radar-container #background #telegram {
+  top: 0%;
+  left: 70%;
+}
+#radar-container #background #stat {
+  top: 50%;
+  left: 70%;
 }
 
 #radar-parent {
@@ -63,12 +155,11 @@
   align-items: center;
   position: absolute;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vw;
   overflow: hidden;
   transform: matrix(1, 0, 0, -1, 0, 0);
   filter: blur(8px);
-  backdrop-filter: blur(18px);
 }
 #radar-parent #radar {
   width: 80%;
@@ -78,15 +169,25 @@
   align-items: center;
   overflow: hidden;
   border-radius: 50%;
-  animation: sweep 4s infinite linear;
-  background: conic-gradient(from 180deg at 50.1% 47.34%, #69FE8B 0deg, rgba(35, 41, 50, 0) 69.37deg, rgba(35, 41, 50, 0) 346.88deg, #69FE8B 360deg);
-  opacity: 0.6;
+  rotate: 90deg;
+  background: conic-gradient(from 180deg at 50.1% 47.34%, #69fe8b 0deg, #3c8558 6.44deg, rgba(35, 41, 50, 0) 65.61deg, rgba(35, 41, 50, 0) 358.4deg, #69fe8b 360deg);
+  opacity: 0.9;
 }
 
-@keyframes sweep {
-  to {
-    transform: rotate(-360deg);
+@-webkit-keyframes sweep {
+  0% {
+    background: conic-gradient(from 180deg at 50.1% 47.34%, #69fe8b 0%, #3c8558 1.81%, rgba(35, 41, 50, 0) 18.23%, rgba(35, 41, 50, 0) 99.4%, #69fe8b 100%);
+  }
+  100% {
+    background: conic-gradient(from 180deg at 50.1% 47.34%, #69fe8b 0%, #3c8558 1.81%, rgba(35, 41, 50, 0) 8%, rgba(35, 41, 50, 0) 99.4%, #69fe8b 100%);
   }
 }
 
-/*# sourceMappingURL=Radar.css.map */
+@keyframes sweep {
+  0% {
+    background: conic-gradient(from 180deg at 50.1% 47.34%, #69fe8b 0%, #3c8558 1.81%, rgba(35, 41, 50, 0) 18.23%, rgba(35, 41, 50, 0) 99.4%, #69fe8b 100%);
+  }
+  100% {
+    background: conic-gradient(from 180deg at 50.1% 47.34%, #69fe8b 0%, #3c8558 1.81%, rgba(35, 41, 50, 0) 8%, rgba(35, 41, 50, 0) 99.4%, #69fe8b 100%);
+  }
+}/*# sourceMappingURL=Radar.css.map */

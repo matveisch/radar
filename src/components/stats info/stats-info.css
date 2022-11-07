@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+#statsParent {
+  padding: 20px 1.357vw;
+  background-color: #69fe8b;
+  position: relative;
+  width: 97.286vw;
+  left: calc(-50vw + 50%);
+}
+#statsParent #stats-wrapper {
+  background-color: #69fe8b;
+}
+#statsParent #stats-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin: auto;
+}
+#statsParent #stats-container .flexBox {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+#statsParent #stats-container .flexBox .stat-text {
+  margin-right: 10px;
+  display: inline;
+}
+
+/*# sourceMappingURL=stats-info.css.map */

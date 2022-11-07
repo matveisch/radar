@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+#rtw-btn-background {
+  margin-top: 180px;
+  position: relative;
+  height: 450px;
+  width: 100vw;
+  background-color: #69fe8b;
+}
+#rtw-btn-background #rtw-btn-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  background: radial-gradient(25.8% 50% at 50% 50%, rgba(35, 41, 50, 0.8) 0%, rgba(105, 254, 139, 0) 100%);
+  opacity: 0.8;
+}
+#rtw-btn-background #rtw-btn-container img {
+  filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+  position: absolute;
+  margin: auto;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  height: 32px;
+}
+#rtw-btn-background #rtw-btn {
+  position: absolute;
+  color: #69fe8b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 100px;
+  background-color: #232932;
+  border-radius: 100px;
+  text-align: center;
+  border: 0;
+}
+#rtw-btn-background #rtw-btn #rtw-btn-text {
+  color: #69fe8b;
+}/*# sourceMappingURL=RtwBtn.css.map */

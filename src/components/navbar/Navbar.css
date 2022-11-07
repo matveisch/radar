@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+@media (max-width: 720px) {
+  .H1 {
+    font-size: 20px;
+  }
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 10vw 150px 10vw;
+  width: 80vw;
+}
+#navbar #logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#navbar #logo h1 {
+  text-transform: uppercase;
+  color: #eeeeee;
+}
+#navbar #navbar-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#navbar #navbar-links #contact-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 3px solid #69fe8b;
+  transition: 0.3s;
+}
+#navbar #navbar-links #contact-btn a {
+  padding: 10px 35px;
+}
+#navbar #navbar-links #contact-btn a::after {
+  content: "";
+  position: absolute;
+  background-color: #69fe8b;
+  height: 100%;
+  width: 0px;
+  left: 50%;
+  bottom: -8px;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+#navbar #navbar-links #contact-btn:hover {
+  background-color: #69fe8b;
+}
+#navbar #navbar-links #contact-btn:hover a {
+  color: #232932;
+  font-weight: 800;
+}
+#navbar #navbar-links #contact-btn:hover a::after {
+  content: "";
+  position: absolute;
+  background-color: #69fe8b;
+  height: 3px;
+  width: 0px;
+  left: 50%;
+  bottom: -8px;
+  transition: 0.3s;
+  border-radius: 3px;
+}/*# sourceMappingURL=Navbar.css.map */
