@@ -73,10 +73,10 @@
 }
 
 #statsParent {
-  padding: 20px 10vw;
+  padding: 20px 1.357vw;
   background-color: #69fe8b;
   position: relative;
-  width: 80vw;
+  width: 97.286vw;
   left: calc(-50vw + 50%);
 }
 #statsParent #stats-wrapper {
@@ -85,8 +85,7 @@
 #statsParent #stats-container {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   margin: auto;
 }
 #statsParent #stats-container .flexBox {
@@ -98,4 +97,6 @@
 #statsParent #stats-container .flexBox .stat-text {
   margin-right: 10px;
   display: inline;
-}/*# sourceMappingURL=stats-info.css.map */
+}
+
+/*# sourceMappingURL=stats-info.css.map */

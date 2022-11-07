@@ -1,10 +1,10 @@
 @import '../../styles/variables';
 
 #statsParent {
-  padding: 20px $page-padding;
+  padding: 20px $stats-padding;
   background-color: $main-green;
   position: relative;
-  width: calc(100vw - calc($page-padding * 2));
+  width: calc(100vw - calc($stats-padding * 2));
   left: calc(-50vw + 50%);
   #stats-wrapper {
     background-color: $main-green;
