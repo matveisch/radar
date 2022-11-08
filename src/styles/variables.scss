@@ -25,13 +25,10 @@ $page-padding: 10vw;
 $stats-padding: 1.357vw;
 
 .H1 {
-  font-size: 72px;
+  font-size: 5vw;
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
-  @include md {
-    font-size: 20px;
-  }
 }
 
 .H2 {
