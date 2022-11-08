@@ -13,15 +13,10 @@
 }
 
 .H1 {
-  font-size: 72px;
+  font-size: 5vw;
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
-}
-@media (max-width: 720px) {
-  .H1 {
-    font-size: 20px;
-  }
 }
 
 .H2 {
@@ -99,6 +94,7 @@
 }
 #radar-container #titles h1 {
   text-align: center;
+  font-size: 5vw;
 }
 #radar-container #titles h2 {
   text-transform: uppercase;
