@@ -12,15 +12,10 @@
 }
 
 .H1 {
-  font-size: 72px;
+  font-size: 5vw;
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
-}
-@media (max-width: 720px) {
-  .H1 {
-    font-size: 20px;
-  }
 }
 
 .H2 {
@@ -102,6 +97,7 @@
   color: #69fe8b;
   top: 50%;
   left: 50%;
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 30px 100px;
   background-color: #232932;
@@ -111,4 +107,6 @@
 }
 #rtw-btn-background #rtw-btn #rtw-btn-text {
   color: #69fe8b;
-}/*# sourceMappingURL=RtwBtn.css.map */
+}
+
+/*# sourceMappingURL=RtwBtn.css.map */

@@ -12,15 +12,10 @@
 }
 
 .H1 {
-  font-size: 72px;
+  font-size: 5vw;
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
-}
-@media (max-width: 720px) {
-  .H1 {
-    font-size: 20px;
-  }
 }
 
 .H2 {
@@ -111,4 +106,6 @@
   max-width: 1100px;
   position: relative;
   right: 25%;
-}/*# sourceMappingURL=technology.css.map */
+}
+
+/*# sourceMappingURL=technology.css.map */
