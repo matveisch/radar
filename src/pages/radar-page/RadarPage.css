@@ -12,15 +12,10 @@
 }
 
 .H1 {
-  font-size: 72px;
+  font-size: 5vw;
   font-weight: 700;
   line-height: 84px;
   letter-spacing: 0.045em;
-}
-@media (max-width: 720px) {
-  .H1 {
-    font-size: 20px;
-  }
 }
 
 .H2 {
@@ -73,6 +68,8 @@
 }
 
 #radar-page {
-  padding: 0 10vw;
+  padding: 102px 10vw 0;
   width: 80vw;
-}/*# sourceMappingURL=RadarPage.css.map */
+}
+
+/*# sourceMappingURL=RadarPage.css.map */

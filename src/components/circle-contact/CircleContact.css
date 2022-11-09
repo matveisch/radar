@@ -67,64 +67,58 @@
   letter-spacing: 0;
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 48px 10vw 48px 10vw;
-  width: 80vw;
+.circle-contact .circle {
+  width: 429px;
+  height: 429px;
+  border-radius: 50%;
 }
-#navbar #logo {
+@media (max-width: 1024px) {
+  .circle-contact .circle {
+    width: 300px;
+    height: 300px;
+  }
+}
+.circle-contact .circle-group {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 16px;
 }
-#navbar #logo h1 {
-  text-transform: uppercase;
+.circle-contact .circle-group .upper-circle {
+  background: conic-gradient(from 180deg at 50% 50%, #69FE8B 0deg, rgba(58, 63, 71, 0) 360deg);
+  width: 428px;
+  height: 428px;
+}
+@media (max-width: 1024px) {
+  .circle-contact .circle-group .upper-circle {
+    width: 299px;
+    height: 299px;
+  }
+}
+.circle-contact .circle-group .lower-circle {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(35, 41, 50, 0) 0%, #232932 100%);
+  position: absolute;
+}
+.circle-contact .second-circle {
+  transform: rotate(-180deg);
+}
+.circle-contact h1 {
+  position: absolute;
+  left: -20px;
   color: #eeeeee;
 }
-#navbar #navbar-links {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-#navbar #navbar-links #contact-btn {
-  display: flex;
-  align-items: center;
-  border-radius: 30px;
-  border: 3px solid #69fe8b;
-  transition: 0.3s;
-}
-#navbar #navbar-links #contact-btn a {
-  padding: 10px 35px;
-}
-#navbar #navbar-links #contact-btn a::after {
-  content: "";
+.circle-contact .paragraphs {
   position: absolute;
-  background-color: #69fe8b;
-  height: 100%;
-  width: 0;
-  left: 50%;
-  bottom: -8px;
-  transition: 0.3s;
-  border-radius: 3px;
+  transform: rotate(-180deg);
+  color: #eeeeee;
+  right: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-#navbar #navbar-links #contact-btn:hover {
-  background-color: #69fe8b;
-}
-#navbar #navbar-links #contact-btn:hover a {
-  color: #232932;
-  font-weight: 800;
-}
-#navbar #navbar-links #contact-btn:hover a::after {
-  content: "";
-  position: absolute;
-  background-color: #69fe8b;
-  height: 3px;
-  width: 0;
-  left: 50%;
-  bottom: -8px;
-  transition: 0.3s;
-  border-radius: 3px;
+.circle-contact .paragraphs .icons {
+  display: flex;
+  gap: 16px;
 }
 
-/*# sourceMappingURL=Navbar.css.map */
+/*# sourceMappingURL=CircleContact.css.map */

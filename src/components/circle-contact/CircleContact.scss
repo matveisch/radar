@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.circle-contact {
+  .circle {
+    width: 429px;
+    height: 429px;
+    border-radius: 50%;
+
+    @media (max-width: 1024px) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .circle-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .upper-circle {
+      background: conic-gradient(from 180deg at 50% 50%, #69FE8B 0deg, rgba(58, 63, 71, 0) 360deg);
+      width: 428px;
+      height: 428px;
+
+      @media (max-width: 1024px) {
+        width: 299px;
+        height: 299px;
+      }
+    }
+
+    .lower-circle {
+      background: radial-gradient(50% 50% at 50% 50%, rgba(35, 41, 50, 0) 0%, #232932 100%);
+      position: absolute;
+    }
+  }
+
+  .second-circle {
+    transform: rotate(-180deg);
+  }
+
+  h1 {
+    position: absolute;
+    left: -20px;
+    color: $off-white;
+  }
+
+  .paragraphs {
+    position: absolute;
+    transform: rotate(-180deg);
+    color: $off-white;
+    right: -20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .icons {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}
+
