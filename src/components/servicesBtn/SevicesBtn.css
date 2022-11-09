@@ -67,14 +67,39 @@
   letter-spacing: 0;
 }
 
-.MainWrapper {
-  width: 100vw;
-  overflow: hidden;
-}
-.MainWrapper .App {
+#main-wrapper-btn {
+  background-color: #3a3f47;
+  position: relative;
   display: flex;
-  align-items: center;
-  background-color: #232932;
-  width: 100vw;
-  margin: auto;
-}/*# sourceMappingURL=App.css.map */
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px;
+  height: 170px;
+  overflow: hidden;
+  flex-basis: 20%;
+  cursor: pointer;
+}
+#main-wrapper-btn:hover {
+  box-shadow: 0 0 32px 0px rgba(105, 254, 139, 0.15);
+}
+#main-wrapper-btn #title-btn {
+  height: auto;
+  position: relative;
+  margin-top: 20px;
+  color: #eeeeee;
+  font-size: 50px;
+  line-height: 50px;
+  z-index: 1;
+  width: 40%;
+}
+#main-wrapper-btn #img-btn {
+  filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
+}
+#main-wrapper-btn #arrow {
+  height: 3px;
+  width: 30px;
+  background-color: #69fe8b;
+  position: absolute;
+  bottom: 40px;
+  border-radius: 1.5px;
+}/*# sourceMappingURL=SevicesBtn.css.map */

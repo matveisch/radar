@@ -1,5 +1,5 @@
 import React from 'react'
-import './services.css'
+import './servicesSection.css'
 import ServiceCard from '../../components/service card/ServiceCard'
 
 // Import Swiper React components
@@ -10,7 +10,7 @@ import 'swiper/css'
 
 const Services = () => {
     return (
-        <div id="main-wrapper">
+        <div id="main-wrapper-services-section">
             <h2 id="services-title" className="H2">
                 Our Services
             </h2>

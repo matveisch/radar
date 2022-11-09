@@ -1,8 +1,9 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 #rtw-btn-background {
   margin-top: 180px;
   position: relative;
+  left: -$page-padding;
   height: 450px;
   width: 100vw;
   background-color: $main-green;
@@ -11,10 +12,15 @@
     height: 100%;
     overflow: hidden;
     align-items: center;
-    background: radial-gradient(25.8% 50% at 50% 50%, rgba(35, 41, 50, 0.8) 0%, rgba(105, 254, 139, 0) 100%);
+    background: radial-gradient(
+      25.8% 50% at 50% 50%,
+      rgba(35, 41, 50, 0.8) 0%,
+      rgba(105, 254, 139, 0) 100%
+    );
     opacity: 0.8;
     img {
-       filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+      filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg)
+        brightness(102%) contrast(99%);
 
       position: absolute;
       margin: auto;
@@ -34,13 +40,11 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 30px 100px;
-    
+
     background-color: $black;
     border-radius: 100px;
     text-align: center;
     border: 0;
-  
-    
 
     #rtw-btn-text {
       color: $main-green;
