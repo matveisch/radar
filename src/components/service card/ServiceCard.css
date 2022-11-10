@@ -79,12 +79,12 @@
   border-radius: 16px;
   padding: 20px;
   box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent #title {
   color: #69fe8b;
   position: relative;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent ul {
   padding-left: 20px;
@@ -103,42 +103,42 @@
 #card-parent ul #list-item-3 {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent ul #list-item-4 {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent ul #list-item-5 {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent ul #list-item-6 {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent ul #list-item-7 {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent ul #list-item-8 {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent ul #list-item-9 {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent ul #list-item-10 {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent #learn-more-parent {
   position: absolute;
@@ -147,7 +147,7 @@
   right: 20px;
   align-items: end;
   text-align: right;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #card-parent #learn-more-parent #learn-more {
   margin-left: auto;

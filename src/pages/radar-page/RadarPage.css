@@ -68,8 +68,17 @@
 }
 
 #radar-page {
-  padding: 102px 10vw 0;
+  padding: 0 10vw;
   width: 80vw;
 }
 
-/*# sourceMappingURL=RadarPage.css.map */
+.progress-bar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #69fe8b;
+  transform-origin: 0%;
+}/*# sourceMappingURL=RadarPage.css.map */

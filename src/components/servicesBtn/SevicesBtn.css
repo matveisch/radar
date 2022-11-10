@@ -67,44 +67,39 @@
   letter-spacing: 0;
 }
 
-#main-container {
-  margin-top: 180px;
-  width: 80vw;
-}
-#main-container #flex {
+#main-wrapper-btn {
+  background-color: #3a3f47;
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: 30px;
-  position: relative;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px;
+  height: 170px;
+  overflow: hidden;
+  flex-basis: 20%;
+  cursor: pointer;
 }
-#main-container #flex #left-container {
-  z-index: 1;
-  width: 50%;
+#main-wrapper-btn:hover {
+  box-shadow: 0 0 32px 0px rgba(105, 254, 139, 0.15);
 }
-#main-container #flex #left-container #tech-title {
-  color: #eeeeee;
-  margin-bottom: 60px;
-}
-#main-container #flex #left-container #tech-paragraph {
-  margin-bottom: 60px;
-  color: #eeeeee;
-}
-#main-container #flex #left-container #tech-cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
-  grid-gap: 30px;
-}
-#main-container #flex #right-container {
-  z-index: 0;
-  width: 50%;
-  right: 0;
-}
-#main-container #flex #right-container #tech-radar-gif {
-  width: 200%;
+#main-wrapper-btn #title-btn {
   height: auto;
-  max-width: 1100px;
   position: relative;
-  right: 25%;
+  margin-top: 20px;
+  color: #eeeeee;
+  font-size: 50px;
+  line-height: 50px;
+  z-index: 1;
+  width: 40%;
 }
-
-/*# sourceMappingURL=technology.css.map */
+#main-wrapper-btn #img-btn {
+  filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
+}
+#main-wrapper-btn #arrow {
+  height: 3px;
+  width: 30px;
+  background-color: #69fe8b;
+  position: absolute;
+  bottom: 40px;
+  border-radius: 1.5px;
+}/*# sourceMappingURL=SevicesBtn.css.map */

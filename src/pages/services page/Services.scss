@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+#services-main-wrapper {
+  padding: 0 $page-padding;
+  height: calc(100vh - 300px);
+  #services-btn-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 30px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+
+    .services-btn {
+      max-width: 300px;
+    }
+
+    #contact-card {
+      background-color: $off-black;
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      #contact-card-btn {
+        text-align: center;
+        border: none;
+        color: $off-white;
+        background-color: $black;
+        border-radius: 16px;
+        padding: 20px 40px;
+        //  position: relative;
+        &:hover {
+          box-shadow: 0 0 32px 0px rgba(105, 254, 139, 0.15);
+        }
+      }
+      #title {
+        //  position: relative;
+        font-size: 47px;
+        margin-top: 20px;
+        color: $off-white;
+        line-height: 50px;
+        z-index: 1;
+        pointer-events: none;
+      }
+    }
+  }
+}

@@ -13,12 +13,12 @@
   border-radius: 16px;
   padding: 20px;
   box-shadow: 4px 9px 17px rgba(18, 23, 31, 0.28);
-  transition: 0.5s;
+  transition: 0.3s;
 
   #title {
     color: $main-green;
     position: relative;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   ul {
@@ -41,7 +41,7 @@
       #list-item-#{$j} {
         opacity: 0;
         visibility: hidden;
-        transition: 0.5s;
+        transition: 0.3s;
       }
     }
   }
@@ -52,7 +52,7 @@
     right: 20px;
     align-items: end;
     text-align: right;
-    transition: 0.5s;
+    transition: 0.3s;
 
     #learn-more {
       margin-left: auto;

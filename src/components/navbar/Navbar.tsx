@@ -14,7 +14,7 @@ const Navbar = () => {
                 </div>
             </Link>
             <div id="navbar-links">
-                <NavbarButton buttonName={'Services'} linkTo={'/'} />
+                <NavbarButton buttonName={'Services'} linkTo={'/services'} />
                 <NavbarButton buttonName={'About us'} linkTo={'/'} />
                 <NavbarButton buttonName={'Research'} linkTo={'/'} />
                 <div id="contact-btn">
