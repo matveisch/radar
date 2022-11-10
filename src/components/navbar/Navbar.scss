@@ -3,7 +3,7 @@
 #navbar {
   display: flex;
   justify-content: space-between;
-  padding: 48px $page-padding 150px $page-padding;
+  padding: 48px $page-padding 48px $page-padding;
   width: calc(100vw - calc($page-padding * 2));
 
   #logo {
@@ -35,7 +35,7 @@
           position: absolute;
           background-color: $main-green;
           height: 100%;
-          width: 0px;
+          width: 0;
           left: 50%;
           bottom: -8px;
           transition: 0.3s;
@@ -54,7 +54,7 @@
             position: absolute;
             background-color: $main-green;
             height: 3px;
-            width: 0px;
+            width: 0;
             left: 50%;
             bottom: -8px;
             transition: 0.3s;
