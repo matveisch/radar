@@ -67,14 +67,33 @@
   letter-spacing: 0;
 }
 
-.MainWrapper {
-  width: 100vw;
-  overflow: hidden;
+#main-wrapper-services-section {
+  z-index: 1;
+  margin-top: 180px;
+  width: 80vw;
 }
-.MainWrapper .App {
-  display: flex;
-  align-items: center;
-  background-color: #232932;
-  width: 100vw;
-  margin: auto;
-}/*# sourceMappingURL=App.css.map */
+#main-wrapper-services-section #services-title {
+  color: #eeeeee;
+  margin-bottom: 60px;
+}
+#main-wrapper-services-section #services-wrapper .services-paragraph-smaller {
+  color: #eeeeee;
+}
+@media (min-width: 1365px) {
+  #main-wrapper-services-section #services-wrapper .services-paragraph-smaller {
+    display: none;
+  }
+}
+#main-wrapper-services-section #services-wrapper .service-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+#main-wrapper-services-section #services-wrapper .service-cards-container .services-paragraph-bigger {
+  color: #eeeeee;
+}
+@media (max-width: 1365px) {
+  #main-wrapper-services-section #services-wrapper .service-cards-container .services-paragraph-bigger {
+    display: none;
+  }
+}/*# sourceMappingURL=ServicesSection.css.map */

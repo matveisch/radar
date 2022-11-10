@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.H1,
+.H2,
+.H3,
+.H4,
+.paragraph,
+.link,
+.light-paragraph,
+.light-link {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+.H1 {
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 0.045em;
+}
+
+.H2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.005em;
+}
+
+.H3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.H4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+}
+
+.light-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.light-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+#services-main-wrapper {
+  padding: 0 10vw;
+  height: calc(100vh - 300px);
+}
+#services-main-wrapper #services-btn-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#services-main-wrapper #services-btn-flex .checked-service-btn div {
+  transition: 0.5;
+  background-color: #69fe8b;
+}
+#services-main-wrapper #services-btn-flex .checked-service-btn h4 {
+  color: #232932;
+}
+#services-main-wrapper #services-btn-flex .services-btn {
+  cursor: pointer;
+}
+#services-main-wrapper #services-btn-flex #contact-card {
+  background-color: #3a3f47;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#services-main-wrapper #services-btn-flex #contact-card #contact-card-btn {
+  text-align: center;
+  border: none;
+  color: #eeeeee;
+  background-color: #232932;
+  border-radius: 16px;
+  padding: 20px 40px;
+}
+#services-main-wrapper #services-btn-flex #contact-card #contact-card-btn:hover {
+  box-shadow: 0 0 32px 0px rgba(105, 254, 139, 0.15);
+}
+#services-main-wrapper #services-btn-flex #contact-card #title {
+  font-size: 47px;
+  margin-top: 20px;
+  color: #eeeeee;
+  line-height: 50px;
+  z-index: 1;
+  pointer-events: none;
+}/*# sourceMappingURL=Services.css.map */

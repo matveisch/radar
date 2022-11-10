@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ServiceCard.css'
 import arrow from '../../images/Learn-more-arrow.svg'
 
 interface Props {
-    imageURL?: string
+    id: number
+    imageURL: string
     title: string
     description: string[]
 }
@@ -25,7 +27,7 @@ const ServiceCard: React.FC<Props> = (props: Props) => {
                         return (
                             <li
                                 key={index}
-                                id={"list-item-"+index}
+                                id={'list-item-' + index}
                                 className="light-paragraph"
                             >
                                 <span>{item}</span>
@@ -39,13 +41,14 @@ const ServiceCard: React.FC<Props> = (props: Props) => {
             линки надо прикрутить когда страницы будут
             <Link></Link>
             */}
-
-            <div id="learn-more-parent">
-                <p id="learn-more" className="light-link">
-                    Leran more
-                </p>
-                <img id="arrow" src={arrow} alt="Learn more arrow" />
-            </div>
+            <Link to="/services" state={{ checkedServiceIndex: props.id }}>
+                <div id="learn-more-parent">
+                    <p id="learn-more" className="light-link">
+                        Leran more
+                    </p>
+                    <img id="arrow" src={arrow} alt="Learn more arrow" />
+                </div>
+            </Link>
         </div>
     )
 }

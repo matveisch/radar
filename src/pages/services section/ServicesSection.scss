@@ -1,10 +1,9 @@
 @import '../../styles/variables';
 
-#main-wrapper {
+#main-wrapper-services-section {
   z-index: 1;
   margin-top: 180px;
   width: calc(100vw - calc($page-padding * 2));
-  padding: 0 $page-padding;
 
   #services-title {
     color: $off-white;
