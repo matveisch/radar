@@ -77,7 +77,6 @@
   height: 170px;
   overflow: hidden;
   flex-basis: 20%;
-  cursor: pointer;
 }
 #main-wrapper-btn:hover {
   box-shadow: 0 0 32px 0px rgba(105, 254, 139, 0.15);

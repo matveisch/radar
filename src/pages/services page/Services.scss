@@ -4,20 +4,27 @@
   height: calc(100vh - 300px);
   #services-btn-flex {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
     column-gap: 30px;
-    flex-wrap: wrap;
-
+    .checked-service-btn {
+      div {
+        transition: 0.5;
+        background-color: $main-green;
+      }
+      h4 {
+        color: $black;
+      }
+    }
     .services-btn {
-      max-width: 300px;
+      cursor: pointer;
     }
 
     #contact-card {
       background-color: $off-black;
       border-radius: 16px;
       padding: 20px;
-      max-width: 250px;
+
       display: flex;
       flex-direction: column;
       width: 100%;

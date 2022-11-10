@@ -27,6 +27,7 @@ const Services = () => {
                         интеграцию в места размещения.
                     </p>
                     <ServiceCard
+                        id={0}
                         title="Social"
                         imageURL="telegram-circle"
                         description={[
@@ -38,6 +39,7 @@ const Services = () => {
                         ]}
                     />
                     <ServiceCard
+                        id={1}
                         title="Web"
                         imageURL="Web"
                         description={[
@@ -49,6 +51,7 @@ const Services = () => {
                         ]}
                     />
                     <ServiceCard
+                        id={2}
                         title="Television"
                         imageURL="Television"
                         description={[
@@ -60,6 +63,7 @@ const Services = () => {
                         ]}
                     />
                     <ServiceCard
+                        id={3}
                         title="Radio"
                         imageURL="Radio"
                         description={[
@@ -72,6 +76,7 @@ const Services = () => {
                         ]}
                     />
                     <ServiceCard
+                        id={4}
                         title="Creatives"
                         imageURL="Creative"
                         description={[
@@ -82,6 +87,7 @@ const Services = () => {
                         ]}
                     />
                     <ServiceCard
+                        id={5}
                         title="3D Visuals"
                         imageURL="3d-box"
                         description={[
@@ -91,6 +97,7 @@ const Services = () => {
                         ]}
                     />
                     <ServiceCard
+                        id={6}
                         title="DOOH"
                         imageURL="Advertise"
                         description={[

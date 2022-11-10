@@ -170,7 +170,7 @@
   opacity: 0.9;
 }
 
-@keyframes sweep {
+@-webkit-keyframes sweep {
   0% {
     background: conic-gradient(from 180deg at 50.1% 47.34%, #69fe8b 0%, #3c8558 1.81%, rgba(35, 41, 50, 0) 18.23%, rgba(35, 41, 50, 0) 99.4%, #69fe8b 100%);
   }
@@ -179,4 +179,11 @@
   }
 }
 
-/*# sourceMappingURL=Radar.css.map */
+@keyframes sweep {
+  0% {
+    background: conic-gradient(from 180deg at 50.1% 47.34%, #69fe8b 0%, #3c8558 1.81%, rgba(35, 41, 50, 0) 18.23%, rgba(35, 41, 50, 0) 99.4%, #69fe8b 100%);
+  }
+  100% {
+    background: conic-gradient(from 180deg at 50.1% 47.34%, #69fe8b 0%, #3c8558 1.81%, rgba(35, 41, 50, 0) 8%, rgba(35, 41, 50, 0) 99.4%, #69fe8b 100%);
+  }
+}/*# sourceMappingURL=Radar.css.map */
