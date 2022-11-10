@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 #radar-page {
-  padding: 0 $page-padding;
+  padding: 102px $page-padding 0;
   width: calc(100vw - calc($page-padding * 2));
 }
 .progress-bar {
