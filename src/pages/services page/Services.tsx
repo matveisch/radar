@@ -1,56 +1,26 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { isTemplateMiddle } from 'typescript'
+import { idText, isTemplateMiddle } from 'typescript'
 import ServicesBtn from '../../components/servicesBtn/ServicesBtn'
+import useServicesList from '../../data/servicesList'
 import './Services.css'
-const servicesArr = [
-    {
-        id: 0,
-        name: 'Social',
-        img: 'telegram-circle',
-        content:
-            '- Телеграмм - Инстаграмм - Фейсбук - Твиттер - ВКонтакте - Ютуб Ютуб Ютуб Ютуб Ютуб Ютуб Ютуб',
-    },
-    {
-        id: 1,
-        name: 'Web',
-        img: 'Web',
-        content: '',
-    },
-    {
-        id: 2,
-        name: 'TV',
-        img: 'Television',
-        content: '',
-    },
-    {
-        id: 3,
-        name: 'Radio',
-        img: 'Radio',
-        content:
-            '-  Cетевое размещение - Точечное размещение - Прямая радиореклама - Интеграция в эфир - Интернет радио - Аудио продакшн',
-    },
-    {
-        id: 4,
-        name: 'Creatives',
-        img: 'Creative',
-        content: '',
-    },
-    { id: 5, name: '3D', img: '3d-box', content: '' },
-    { id: 6, name: 'DOOH', img: 'Advertise', content: '' },
-]
+import { number } from 'yup'
 
 const Services = () => {
+    const location = useLocation()
+    const servicesArr = useServicesList()
     const [isOpen, setIsOpen] = useState(true)
     const [checkedService, setCheckedService] = useState(servicesArr[0])
+    const [gridBottomEdgePos, setGridBottomEdgePos] = useState(0)
+    const contactBtn = useRef<HTMLDivElement>(null)
 
-    const location = useLocation()
-
+    //Проверяем если при открытии страницы услуг был
+    //передан индекс услуги чтобы открыть конкретную
     useEffect(() => {
         try {
+            //Сразу открываем выбранную услугу
             const { checkedServiceIndex } = location.state
-            console.log(checkedServiceIndex)
             setIsOpen(false)
             setCheckedService(servicesArr[checkedServiceIndex])
         } catch (e) {
@@ -58,15 +28,31 @@ const Services = () => {
         }
     }, [])
 
+    //Обновляет нижнюю координату Contact кнопочки => высоту grid элемента
+    //Позволяет определить когда юзер долистал до конца кнопочек
+    useEffect(() => {
+        setGridBottomEdgePos(
+            contactBtn.current != null ? contactBtn.current.offsetTop + 210 : 0
+        )
+    })
+
+    //Скролл до упора вверх раскрывает кнопочки
+    //Скролл ниже чем кнопочки закрывает кнопочки
     const handleWheel = (e: any) => {
-        console.log(e)
-        if (e.deltaY > 0) {
-            setIsOpen(false)
-        } else {
+        //Если уперлись вверх - открываем:
+        if (e.deltaY < 0 && e.view.pageYOffset == 0) {
             setIsOpen(true)
+
+            //Или если пролистали до конца кнопочек - закрываем:
+        } else if (
+            e.view.pageYOffset + e.view.innerHeight >=
+            gridBottomEdgePos
+        ) {
+            setIsOpen(false)
         }
     }
 
+    //Открывает секцию на котрую нажали
     const handleClick = (index: number) => {
         setCheckedService(servicesArr[index])
         setIsOpen(false)
@@ -74,7 +60,7 @@ const Services = () => {
 
     return (
         <div id="services-main-wrapper" onWheel={handleWheel}>
-            <div id="services-btn-flex">
+            <div id="services-btn-grid">
                 {servicesArr.map((item, index) => {
                     return (
                         <div
@@ -95,6 +81,7 @@ const Services = () => {
                     )
                 })}
                 <motion.div
+                    ref={contactBtn}
                     id="contact-card"
                     animate={{ height: isOpen ? '170px' : '60px' }}
                 >
@@ -116,9 +103,18 @@ const Services = () => {
                     >
                         Need help?
                     </motion.h4>
-                    <Link to="/contact" id="contact-card-btn" className="link">
-                        Ask Us
-                    </Link>
+                    <motion.div
+                        whileTap={{ scale: 0.95 }}
+                        whileHover={{ scale: 1.03 }}
+                    >
+                        <Link
+                            to="/contact"
+                            id="contact-card-btn"
+                            className="link"
+                        >
+                            Ask Us
+                        </Link>
+                    </motion.div>
                 </motion.div>
             </div>
             <motion.div

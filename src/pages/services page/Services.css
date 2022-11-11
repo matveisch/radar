@@ -71,32 +71,37 @@
   padding: 0 10vw;
   height: calc(100vh - 300px);
 }
-#services-main-wrapper #services-btn-flex {
+#services-main-wrapper #services-btn-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(max(230px, 20%), 1fr));
   grid-gap: 30px;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-#services-main-wrapper #services-btn-flex .checked-service-btn div {
+#services-main-wrapper #services-btn-grid .checked-service-btn div {
   transition: 0.5;
   background-color: #69fe8b;
 }
-#services-main-wrapper #services-btn-flex .checked-service-btn h4 {
+#services-main-wrapper #services-btn-grid .checked-service-btn h4 {
   color: #232932;
 }
-#services-main-wrapper #services-btn-flex .services-btn {
+#services-main-wrapper #services-btn-grid .services-btn {
   cursor: pointer;
 }
-#services-main-wrapper #services-btn-flex #contact-card {
+#services-main-wrapper #services-btn-grid #contact-card {
   background-color: #3a3f47;
   border-radius: 16px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
-#services-main-wrapper #services-btn-flex #contact-card #contact-card-btn {
+@media (max-width: 1262px) {
+  #services-main-wrapper #services-btn-grid #contact-card {
+    grid-column: span 2;
+  }
+}
+#services-main-wrapper #services-btn-grid #contact-card #contact-card-btn {
+  display: block;
   text-align: center;
   border: none;
   color: #eeeeee;
@@ -104,10 +109,10 @@
   border-radius: 16px;
   padding: 20px 40px;
 }
-#services-main-wrapper #services-btn-flex #contact-card #contact-card-btn:hover {
+#services-main-wrapper #services-btn-grid #contact-card #contact-card-btn:hover {
   box-shadow: 0 0 32px 0px rgba(105, 254, 139, 0.15);
 }
-#services-main-wrapper #services-btn-flex #contact-card #title {
+#services-main-wrapper #services-btn-grid #contact-card #title {
   font-size: 47px;
   margin-top: 20px;
   color: #eeeeee;
