@@ -40,11 +40,7 @@ const Navbar: React.FC<Props> = (props) => {
             />
             <div
                 className="menu-options"
-                style={
-                    props.showOptions
-                        ? { display: 'block' }
-                        : { display: 'none' }
-                }
+                style={props.showOptions ? undefined : { display: 'none' }}
             >
                 <NavbarButton
                     buttonName={'Services'}

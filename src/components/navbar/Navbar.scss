@@ -77,6 +77,7 @@
     }
 
     width: 43px;
+    cursor: pointer;
   }
 
   .menu-options {
@@ -85,6 +86,16 @@
     }
     position: absolute;
     top: calc(48px + 43px);
-    right: calc($page-padding);
+    right: calc($page-padding - 43px);
+
+    background-color: $off-black;
+    border-radius: 16px;
+    padding: 15px 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    z-index: 1;
   }
 }

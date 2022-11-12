@@ -135,6 +135,7 @@
 }
 #navbar .burger-icon {
   width: 43px;
+  cursor: pointer;
 }
 @media (min-width: 960px) {
   #navbar .burger-icon {
@@ -144,7 +145,14 @@
 #navbar .menu-options {
   position: absolute;
   top: 91px;
-  right: 10vw;
+  right: calc(10vw - 43px);
+  background-color: #3a3f47;
+  border-radius: 16px;
+  padding: 15px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
 }
 @media (min-width: 960px) {
   #navbar .menu-options {
