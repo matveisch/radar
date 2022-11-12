@@ -5,22 +5,19 @@ import NavbarButton from '../../ui/navbar-button/NavbarButton';
 import { Link } from 'react-router-dom';
 import burger from '../../images/burger.svg';
 
-const Navbar = () => {
-    const [showOptions, setShowOptions] = useState(false);
-    const wrapperRef = useRef<HTMLImageElement>(null);
+interface Props {
+    wrapperRef: React.RefObject<HTMLImageElement>;
+    showOptions: boolean;
+    setShowOptions: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-    function handleClickOutside(e: { target: any }) {
-        if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
-            setShowOptions(false);
-        }
-    }
-
+const Navbar: React.FC<Props> = (props) => {
     function handleOptionClick() {
-        setShowOptions(false);
+        props.setShowOptions(false);
     }
 
     return (
-        <nav id="navbar" onClick={handleClickOutside}>
+        <nav id="navbar">
             <Link to="/">
                 <div id="logo">
                     <img src={logo} alt="logo" />
@@ -37,14 +34,18 @@ const Navbar = () => {
             </div>
             <img
                 src={burger}
-                ref={wrapperRef}
+                ref={props.wrapperRef}
                 alt="burger-icon"
                 className="burger-icon"
-                onClick={() => setShowOptions(!showOptions)}
+                onClick={() => props.setShowOptions(!props.showOptions)}
             />
             <div
                 className="menu-options"
-                style={showOptions ? { display: 'block' } : { display: 'none' }}
+                style={
+                    props.showOptions
+                        ? { display: 'block' }
+                        : { display: 'none' }
+                }
             >
                 <NavbarButton
                     buttonName={'Services'}
