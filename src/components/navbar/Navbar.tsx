@@ -1,4 +1,3 @@
-import { useState, useRef } from 'react';
 import './Navbar.css';
 import logo from '../../images/logo.png';
 import NavbarButton from '../../ui/navbar-button/NavbarButton';
