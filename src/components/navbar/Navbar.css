@@ -70,8 +70,10 @@
 #navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 48px 10vw 48px 10vw;
   width: 80vw;
+  position: relative;
 }
 #navbar #logo {
   display: flex;
@@ -86,6 +88,11 @@
   width: 50%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 960px) {
+  #navbar #navbar-links {
+    display: none;
+  }
 }
 #navbar #navbar-links #contact-btn {
   display: flex;
@@ -125,4 +132,30 @@
   bottom: -8px;
   transition: 0.3s;
   border-radius: 3px;
+}
+#navbar .burger-icon {
+  width: 43px;
+  cursor: pointer;
+}
+@media (min-width: 960px) {
+  #navbar .burger-icon {
+    display: none;
+  }
+}
+#navbar .menu-options {
+  position: absolute;
+  top: 91px;
+  right: calc(10vw - 43px);
+  background-color: #3a3f47;
+  border-radius: 16px;
+  padding: 15px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+@media (min-width: 960px) {
+  #navbar .menu-options {
+    display: none;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
