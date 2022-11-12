@@ -8,6 +8,8 @@ import Services from '../services section/ServicesSection'
 import Technology from '../technology/technology'
 import RtwBtn from '../../components/ready to work btn/RtwBtn'
 
+import StaffCarousel from '../../components/staff-carousel/StaffCarousel'
+
 import './RadarPage.css'
 
 const RadarPage = () => {
@@ -22,6 +24,9 @@ const RadarPage = () => {
             <StatsInfo />
             <Services />
             <Technology />
+            <StaffCarousel animation="gridLoopReverse 50s" />
+            <StaffCarousel animation="gridLoop 30s" />
+            <StaffCarousel animation="gridLoopReverse 20s" />
             <RtwBtn />
         </div>
     )

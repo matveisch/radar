@@ -54,7 +54,7 @@ const Radar = () => {
                         animate={{ x: '1500%', y: '700%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2,
+                            duration: 7,
                             repeat: Infinity,
                             repeatDelay: 0,
                         }}
@@ -66,7 +66,7 @@ const Radar = () => {
                         animate={{ x: '1000%', y: '1200%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2.4,
+                            duration: 5,
                             repeat: Infinity,
                             repeatDelay: 0,
                             delay: 0.2,
@@ -79,7 +79,7 @@ const Radar = () => {
                         animate={{ x: '1100%', y: '1200%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2.8,
+                            duration: 10,
                             repeat: Infinity,
                             repeatDelay: 0,
                             delay: 0.4,
@@ -92,7 +92,7 @@ const Radar = () => {
                         animate={{ x: '400%', y: '1200%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2,
+                            duration: 5,
                             repeat: Infinity,
                             repeatDelay: 0,
                             delay: 0.6,
@@ -105,7 +105,7 @@ const Radar = () => {
                         animate={{ x: '-100%', y: '1200%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2.4,
+                            duration: 8,
                             repeat: Infinity,
                             repeatDelay: 0,
                             delay: 0.8,
@@ -118,7 +118,7 @@ const Radar = () => {
                         animate={{ x: '-500%', y: '1200%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2.8,
+                            duration: 9,
                             repeat: Infinity,
                             repeatDelay: 0,
                             delay: 1,
@@ -131,7 +131,7 @@ const Radar = () => {
                         animate={{ x: '-1100%', y: '1200%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2,
+                            duration: 6,
                             repeat: Infinity,
                             repeatDelay: 0,
                             delay: 1.8,
@@ -144,7 +144,7 @@ const Radar = () => {
                         animate={{ x: '-1300%', y: '1200%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2.4,
+                            duration: 12,
                             repeat: Infinity,
                             repeatDelay: 0,
                         }}
@@ -157,7 +157,7 @@ const Radar = () => {
                         animate={{ x: '-1400%', y: '500%' }}
                         transition={{
                             ease: 'linear',
-                            duration: 2.8,
+                            duration: 11,
                             repeat: Infinity,
                             repeatDelay: 0,
                             delay: 2,
