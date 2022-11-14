@@ -71,32 +71,30 @@
   display: flex;
   width: 200vw;
   margin-left: -10vw;
+  margin-bottom: 30px;
 }
-#carousel-main-div:hover #carousel-div {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-#carousel-main-div #carousel-div {
+#carousel-main-div .carousel-div {
   width: 100vw;
   display: inline-block;
   justify-content: space-evenly;
+  -webkit-animation: gridLoop 30s linear infinite;
+          animation: gridLoop 30s linear infinite;
 }
-#carousel-main-div #carousel-div .carousel-grid {
+#carousel-main-div .carousel-div .carousel-grid {
   display: grid;
   justify-content: space-around;
   grid-template-columns: repeat(auto-fit, 250px);
 }
-#carousel-main-div #carousel-div .carousel-grid .carousel-img {
+#carousel-main-div .carousel-div .carousel-grid .carousel-item {
   border-radius: 16px;
   color: white;
   width: 250px;
   height: 250px;
   background-position: center;
   background-size: cover;
-  background-image: url("https://cdn.dribbble.com/userupload/3279796/file/original-182f6a15165ac27f474765ccd9213354.png?compress=1&resize=1024x768");
 }
-#carousel-main-div #carousel-div .carousel-grid .carousel-img .tech-rectangle {
-  padding: 0;
+#carousel-main-div .carousel-div .carousel-grid .carousel-item .tech-rectangle {
+  padding: 0px;
   width: 250px;
   height: 250px;
 }

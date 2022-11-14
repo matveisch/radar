@@ -1,64 +1,68 @@
-import React from 'react'
-import TechRectangle from '../../ui/tech-rectangle/TechRectangle'
+import React, { useState, useEffect, useRef } from 'react';
+import TechRectangle from '../../ui/tech-rectangle/TechRectangle';
 
-import chain from '../../images/chain.svg'
-import './StaffCarousel.css'
+import chain from '../../images/chain.svg';
+import './StaffCarousel.css';
+import { hasJSDocParameterTags, isJSDoc } from 'typescript';
 
 interface Props {
-    animation: string
+    reversed: boolean;
+    speed?: string;
+    childComp?: React.ReactNode;
 }
 
 const StaffCarousel: React.FC<Props> = (props: Props) => {
-    let anim = props.animation + ' linear infinite'
-    console.log(anim)
-    const animStyle = {
-        animation: anim,
-    }
+    let reversed = props.reversed ? 'gridLoopReverse' : 'gridLoop';
+    let anim = reversed + ' ' + props.speed + ' linear infinite';
 
+    const carouselRef = useRef(null);
+
+    const [isHovered, setIsHovered] = useState(false);
+
+    const [animationStyle, setAnimationStyle] = useState({
+        animation: anim,
+        animationPlayState: 'running',
+    });
+    const [isReversed, setIsReversed] = useState(props.reversed);
+
+    useEffect(() => {
+        //   reversed = isReversed ? 'gridLoopReverse' : 'gridLoop';
+        // anim = reversed + ' ' + props.speed + ' linear infinite';
+        // console.log(carouselRef);
+        setAnimationStyle({
+            animation: anim,
+            animationPlayState: isHovered ? 'paused' : 'running',
+        });
+    }, [isHovered]);
     return (
-        <div id="carousel-main-div">
-            <div style={animStyle} id="carousel-div">
-                <div className="carousel-grid">
-                    <div className="carousel-img">
-                        <TechRectangle img={chain} title="helo" />
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage:
-                                "url('https://images.unsplash.com/photo-1623162905251-e98a25a45a67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')",
-                        }}
-                        className="carousel-img"
-                    >
-                        2
-                    </div>
-                    <div className="carousel-img">3</div>
-                    <div className="carousel-img">4</div>
-                    <div className="carousel-img">5</div>
-                    <div className="carousel-img">6</div>
-                </div>
+        <div
+            onTouchStart={() => {
+                //   setIsReversed(!isReversed);
+                setIsHovered(!isHovered);
+            }}
+            onTouchEnd={() => {
+                setIsHovered(!isHovered);
+            }}
+            onMouseEnter={() => {
+                //  setIsReversed(!isReversed);
+                setIsHovered(!isHovered);
+            }}
+            onMouseLeave={() => {
+                setIsHovered(!isHovered);
+            }}
+            id="carousel-main-div"
+        >
+            <div
+                ref={carouselRef}
+                style={animationStyle}
+                className="carousel-div"
+            >
+                {props.childComp}
             </div>
-            <div style={animStyle} id="carousel-div">
-                <div className="carousel-grid">
-                    <div className="carousel-img">
-                        {' '}
-                        <TechRectangle img={chain} title="helo" />
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage:
-                                "url('https://images.unsplash.com/photo-1623162905251-e98a25a45a67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')",
-                        }}
-                        className="carousel-img"
-                    >
-                        22
-                    </div>
-                    <div className="carousel-img">33</div>
-                    <div className="carousel-img">44</div>
-                    <div className="carousel-img">55</div>
-                    <div className="carousel-img">66</div>
-                </div>
+            <div style={animationStyle} className="carousel-div">
+                {props.childComp}
             </div>
         </div>
-    )
-}
-export default StaffCarousel
+    );
+};
+export default StaffCarousel;
