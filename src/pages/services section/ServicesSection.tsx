@@ -1,16 +1,10 @@
-import React from 'react'
-import './servicesSection.css'
-import ServiceCard from '../../components/service card/ServiceCard'
-import useServicesList from '../../data/servicesList'
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-// Import Swiper styles
-import 'swiper/css'
+import React from 'react';
+import './servicesSection.css';
+import ServiceCard from '../../components/service card/ServiceCard';
+import useServicesList from '../../data/servicesList';
 
 const Services = () => {
-    const servicesArr = useServicesList()
+    const servicesArr = useServicesList();
 
     return (
         <div id="main-wrapper-services-section">
@@ -32,17 +26,18 @@ const Services = () => {
                     {servicesArr.map((item, index) => {
                         return (
                             <ServiceCard
+                                key={index}
                                 id={item.id}
                                 title={item.name}
                                 imageURL={item.img}
                                 description={item.describtionArr}
                             />
-                        )
+                        );
                     })}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Services
+export default Services;

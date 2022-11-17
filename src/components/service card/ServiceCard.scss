@@ -1,8 +1,7 @@
 @import '../../styles/variables';
 
 #icon {
-  filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg)
-    brightness(102%) contrast(99%);
+  filter: $main-green-filter;
   margin-bottom: 15px;
 }
 

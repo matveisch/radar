@@ -1,8 +1,8 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import './CircleContact.css'
-import telegram from '../../images/filled-telegram.svg'
-import whatsapp from '../../images/whatsapp.svg'
+import React from 'react';
+import { motion } from 'framer-motion';
+import './CircleContact.css';
+import telegram from '../../images/telegram-filled.svg';
+import whatsapp from '../../images/whatsapp.svg';
 
 const CircleContact = () => {
     return (
@@ -75,7 +75,7 @@ const CircleContact = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CircleContact
+export default CircleContact;

@@ -1,19 +1,18 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import './SevicesBtn.css'
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import './SevicesBtn.css';
 
 interface Props {
-    name: string
-    image: string
-    isOpen: boolean
+    name: string;
+    image: string;
+    isOpen: boolean;
 }
 
 const ServicesBtn: React.FC<Props> = (props: Props) => {
-    const [hovered, setHovered] = useState(false)
+    const [hovered, setHovered] = useState(false);
     return (
         <motion.div
             whileTap={{ scale: 0.95 }}
-            //  style={{ flexDirection: props.isOpen ? 'column' : 'row' }}
             whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
@@ -61,6 +60,6 @@ const ServicesBtn: React.FC<Props> = (props: Props) => {
                 }}
             ></motion.div>
         </motion.div>
-    )
-}
-export default ServicesBtn
+    );
+};
+export default ServicesBtn;

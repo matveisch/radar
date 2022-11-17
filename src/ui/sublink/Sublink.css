@@ -1,23 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
-@import './breakpoints';
-
-// colors
-$off-white: #eeeeee;
-$off-black: #3a3f47;
-$black: #232932;
-$main-green: #69fe8b;
-
-//filters
-
-$off-white-filter: invert(95%) sepia(0%) saturate(79%) hue-rotate(161deg)
-  brightness(92%) contrast(114%);
-$main-green-filter: invert(100%) sepia(48%) saturate(2720%) hue-rotate(58deg)
-  brightness(102%) contrast(98%);
-$black-filter: invert(13%) sepia(11%) saturate(1119%) hue-rotate(177deg)
-  brightness(99%) contrast(92%);
-$off-black-filter: invert(25%) sepia(6%) saturate(961%) hue-rotate(178deg)
-  brightness(93%) contrast(95%);
-// fonts
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 .H1,
 .H2,
 .H3,
@@ -26,13 +7,9 @@ $off-black-filter: invert(25%) sepia(6%) saturate(961%) hue-rotate(178deg)
 .link,
 .light-paragraph,
 .light-link {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   margin: 0;
 }
-
-// common values
-$page-padding: 10vw;
-$stats-padding: 1.357vw;
 
 .H1 {
   font-size: 5vw;
@@ -88,4 +65,4 @@ $stats-padding: 1.357vw;
   font-weight: 400;
   line-height: 15px;
   letter-spacing: 0;
-}
+}/*# sourceMappingURL=Sublink.css.map */

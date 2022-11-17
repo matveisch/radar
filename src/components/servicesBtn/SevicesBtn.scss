@@ -24,14 +24,10 @@
     line-height: 50px;
     z-index: 1;
     width: 40%;
-
-    //display: inline;
   }
 
   #img-btn {
-    filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg)
-      brightness(94%) contrast(91%);
-    //pointer-events: none;
+    filter: $black-filter;
   }
   #arrow {
     height: 3px;

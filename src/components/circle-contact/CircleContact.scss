@@ -19,7 +19,11 @@
     align-items: center;
 
     .upper-circle {
-      background: conic-gradient(from 180deg at 50% 50%, #69FE8B 0deg, rgba(58, 63, 71, 0) 360deg);
+      background: conic-gradient(
+        from 180deg at 50% 50%,
+        #69fe8b 0deg,
+        rgba(58, 63, 71, 0) 360deg
+      );
       width: 428px;
       height: 428px;
 
@@ -30,7 +34,11 @@
     }
 
     .lower-circle {
-      background: radial-gradient(50% 50% at 50% 50%, rgba(35, 41, 50, 0) 0%, #232932 100%);
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(35, 41, 50, 0) 0%,
+        #232932 100%
+      );
       position: absolute;
     }
   }
@@ -58,7 +66,14 @@
     .icons {
       display: flex;
       gap: 16px;
+      img {
+        width: auto;
+        height: 25px;
+        filter: $off-white-filter;
+        &:hover {
+          filter: $main-green-filter;
+        }
+      }
     }
   }
 }
-
