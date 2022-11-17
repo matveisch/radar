@@ -1,0 +1,63 @@
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(0px - (30vh + 30px) * 6));
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(0px - (30vh + 30px) * 6));
+  }
+}
+@-webkit-keyframes scrollReverse {
+  0% {
+    transform: translateX(calc(0px - (30vh + 30px) * 6));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes scrollReverse {
+  0% {
+    transform: translateX(calc(0px - (30vh + 30px) * 6));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slider {
+  height: 30vh;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 5s linear infinite;
+          animation: scroll 5s linear infinite;
+  display: flex;
+  width: calc((30vh + 30px) * 12);
+}
+.slider .carousel-item {
+  border-radius: 16px;
+  color: white;
+  min-width: 30vh;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  margin-right: 30px;
+}
+.slider .carousel-item .tech-rectangle {
+  padding: 0px;
+  width: 30vh;
+  height: 30vh;
+}/*# sourceMappingURL=carousel.css.map */
