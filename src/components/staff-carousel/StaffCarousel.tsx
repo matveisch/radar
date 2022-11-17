@@ -1,9 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import TechRectangle from '../../ui/tech-rectangle/TechRectangle';
-
-import chain from '../../images/chain.svg';
 import './StaffCarousel.css';
-import { hasJSDocParameterTags, isJSDoc } from 'typescript';
 
 interface Props {
     reversed: boolean;

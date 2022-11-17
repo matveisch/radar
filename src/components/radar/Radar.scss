@@ -41,15 +41,9 @@
     height: 100%;
 
     img {
-      filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg)
-        brightness(94%) contrast(91%);
-      //filter: invert(93%) sepia(62%) saturate(732%) hue-rotate(57deg) brightness(102%) contrast(99%);
+      filter: $black-filter;
       z-index: 1;
       position: relative;
-      // top: 110%;
-      //   left: 50%;
-      //   -ms-transform: translate(-50%, -50%);
-      //   transform: translate(-50%, -50%);
     }
 
     #sound {
@@ -112,7 +106,6 @@
 
   transform: matrix(1, 0, 0, -1, 0, 0);
   filter: blur(8px);
-  //backdrop-filter: blur(18px);
 
   #radar {
     width: 80%;
@@ -124,7 +117,6 @@
     border-radius: 50%;
     rotate: 90deg;
 
-    //animation: sweep 1s infinite linear;
     background: conic-gradient(
       from 180deg at 50.1% 47.34%,
       #69fe8b 0deg,
@@ -158,7 +150,4 @@
       #69fe8b 100%
     );
   }
-  // to {
-
-  // }
 }

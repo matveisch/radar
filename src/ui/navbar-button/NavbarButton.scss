@@ -1,7 +1,6 @@
 @import '../../styles/variables';
 
 .navbar-button {
-
   position: relative;
   padding: 10px 0px;
   opacity: 0.6;
@@ -31,13 +30,10 @@
   align-items: center;
 
   &:hover {
-
     opacity: 1;
-    // border-bottom: 2px solid $main-green;
     &::after {
       width: 100%;
       left: 0;
     }
-
   }
 }

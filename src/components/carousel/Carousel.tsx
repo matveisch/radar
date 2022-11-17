@@ -27,14 +27,12 @@ export default function Carousel({ arrayOfBlocks, reversed, speed }: Props) {
         <div
             className="slider"
             onTouchStart={() => {
-                //   setIsReversed(!isReversed);
                 setIsHovered(!isHovered);
             }}
             onTouchEnd={() => {
                 setIsHovered(!isHovered);
             }}
             onMouseEnter={() => {
-                //  setIsReversed(!isReversed);
                 setIsHovered(!isHovered);
             }}
             onMouseLeave={() => {

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/footer/Footer';
 
 const Layout = () => {
     const [showOptions, setShowOptions] = useState(false);
@@ -20,6 +21,7 @@ const Layout = () => {
                 wrapperRef={wrapperRef}
             />
             <Outlet />
+            <Footer />
         </div>
     );
 };

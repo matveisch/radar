@@ -1,33 +1,19 @@
-import React, { useEffect } from 'react'
-import { motion, useAnimation } from 'framer-motion'
-import './Radar.css'
-import chain from '../../images/chain.svg'
-import connection from '../../images/connection.svg'
-import facebook from '../../images/facebook.svg'
-import graph from '../../images/graph.svg'
-import instagram from '../../images/instagram.svg'
-import messenger from '../../images/messenger.svg'
-import radar from '../../images/radar.svg'
-import social from '../../images/social.svg'
-import sound from '../../images/sound.svg'
-import stat from '../../images/stat.svg'
-import telegram from '../../images/telegram.svg'
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import './Radar.css';
+import chain from '../../images/chain.svg';
+import connection from '../../images/connection.svg';
+import facebook from '../../images/facebook.svg';
+import graph from '../../images/graph.svg';
+import instagram from '../../images/instagram.svg';
+import messenger from '../../images/messenger.svg';
+import radar from '../../images/radar.svg';
+import social from '../../images/social.svg';
+import sound from '../../images/sound.svg';
+import stat from '../../images/stat.svg';
+import telegram from '../../images/telegram.svg';
 
 const Radar = () => {
-    const iconsArr = [
-        chain,
-        facebook,
-        graph,
-        instagram,
-        messenger,
-        radar,
-        social,
-        stat,
-        telegram,
-        sound,
-        connection,
-    ]
-
     return (
         <div id="crop">
             <div id="radar-container">
@@ -37,19 +23,6 @@ const Radar = () => {
                 </div>
 
                 <div id="background">
-                    {/* {
-                    iconsArr.map((item)=>{
-                    return(<motion.img
-                    animate={{x: Math.floor(Math.random() * (1100))-550 , y: Math.floor(Math.random() * (-700)-70)}} 
-                    transition={{
-                        ease:"linear",
-                        duration: 2.5,
-                     repeat: Infinity, 
-                     repeatDelay: 2.5
-                    }}
-                    src={item} alt="" id={item}/>)
-                })
-            } */}
                     <motion.img
                         animate={{ x: '1500%', y: '700%' }}
                         transition={{
@@ -166,10 +139,6 @@ const Radar = () => {
                         alt=""
                         id="stat"
                     />
-
-                    {/* <img src={instagram} alt="" id="instagram"/>
-                    
-                    <img src={radar} alt="" id="radar"/> */}
                 </div>
 
                 <div id="radar-parent">
@@ -202,7 +171,7 @@ const Radar = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Radar
+export default Radar;

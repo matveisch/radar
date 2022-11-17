@@ -104,7 +104,7 @@
   height: 100%;
 }
 #radar-container #background img {
-  filter: invert(13%) sepia(24%) saturate(529%) hue-rotate(177deg) brightness(94%) contrast(91%);
+  filter: invert(13%) sepia(11%) saturate(1119%) hue-rotate(177deg) brightness(99%) contrast(92%);
   z-index: 1;
   position: relative;
 }
